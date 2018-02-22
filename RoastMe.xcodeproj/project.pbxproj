@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BEC3A3DF0B735D8F12E1E2D /* Pods_RoastMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48EB932AF426E7DD80D979A /* Pods_RoastMeTests.framework */; };
+		9DB9773251DE633B2B7E00D8 /* Pods_RoastMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C163035949ADAF8573D93E /* Pods_RoastMe.framework */; };
+		9F3F9F02203E62DB00B47AEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F3F9F01203E62DB00B47AEE /* GoogleService-Info.plist */; };
+		9F97C0FC12B1D7872F0C0557 /* Pods_RoastMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BDFD2981F331EB425513AA /* Pods_RoastMeUITests.framework */; };
 		DC2562CD202931D8006E4438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562CC202931D8006E4438 /* AppDelegate.swift */; };
 		DC2562CF202931D8006E4438 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562CE202931D8006E4438 /* HomeScreen.swift */; };
 		DC2562D2202931D8006E4438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2562D0202931D8006E4438 /* Main.storyboard */; };
@@ -36,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11C163035949ADAF8573D93E /* Pods_RoastMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoastMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13BDFD2981F331EB425513AA /* Pods_RoastMeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoastMeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A49E747C9BEF0AAA543BD3 /* Pods-RoastMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMeTests/Pods-RoastMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		493B82479A88ADE51E8A8BD8 /* Pods-RoastMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMeUITests/Pods-RoastMeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7CB09C91D724BE3E1CEF69EB /* Pods-RoastMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMe/Pods-RoastMe.release.xcconfig"; sourceTree = "<group>"; };
+		9F3F9F01203E62DB00B47AEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A48EB932AF426E7DD80D979A /* Pods_RoastMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoastMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B023303C595395B9235D68BD /* Pods-RoastMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMeUITests/Pods-RoastMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC2562C9202931D8006E4438 /* RoastMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoastMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2562CC202931D8006E4438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC2562CE202931D8006E4438 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -51,6 +63,8 @@
 		DC2562EE202931D8006E4438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC86DCDF202A69A3004D974E /* VoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteViewController.swift; sourceTree = "<group>"; };
 		DC86DCE1202A69B9004D974E /* RoastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoastViewController.swift; sourceTree = "<group>"; };
+		F1A79966F085F65E72E3C171 /* Pods-RoastMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMe/Pods-RoastMe.debug.xcconfig"; sourceTree = "<group>"; };
+		F3E67AAD54A77DF3C3200564 /* Pods-RoastMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMeTests/Pods-RoastMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB9773251DE633B2B7E00D8 /* Pods_RoastMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BEC3A3DF0B735D8F12E1E2D /* Pods_RoastMeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F97C0FC12B1D7872F0C0557 /* Pods_RoastMeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14422E54D4A1D0F007CEF306 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1A79966F085F65E72E3C171 /* Pods-RoastMe.debug.xcconfig */,
+				7CB09C91D724BE3E1CEF69EB /* Pods-RoastMe.release.xcconfig */,
+				F3E67AAD54A77DF3C3200564 /* Pods-RoastMeTests.debug.xcconfig */,
+				24A49E747C9BEF0AAA543BD3 /* Pods-RoastMeTests.release.xcconfig */,
+				B023303C595395B9235D68BD /* Pods-RoastMeUITests.debug.xcconfig */,
+				493B82479A88ADE51E8A8BD8 /* Pods-RoastMeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2BCB4AC47A0AA4E8BA0C3761 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11C163035949ADAF8573D93E /* Pods_RoastMe.framework */,
+				A48EB932AF426E7DD80D979A /* Pods_RoastMeTests.framework */,
+				13BDFD2981F331EB425513AA /* Pods_RoastMeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DC2562C0202931D8006E4438 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +125,8 @@
 				DC2562E0202931D8006E4438 /* PlayTests */,
 				DC2562EB202931D8006E4438 /* PlayUITests */,
 				DC2562CA202931D8006E4438 /* Products */,
+				14422E54D4A1D0F007CEF306 /* Pods */,
+				2BCB4AC47A0AA4E8BA0C3761 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +151,7 @@
 				DC2562D3202931D8006E4438 /* Assets.xcassets */,
 				DC2562D5202931D8006E4438 /* LaunchScreen.storyboard */,
 				DC2562D8202931D8006E4438 /* Info.plist */,
+				9F3F9F01203E62DB00B47AEE /* GoogleService-Info.plist */,
 			);
 			path = Play;
 			sourceTree = "<group>";
@@ -138,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC2562F1202931D8006E4438 /* Build configuration list for PBXNativeTarget "RoastMe" */;
 			buildPhases = (
+				A63C53E69F479B91CD75BEEA /* [CP] Check Pods Manifest.lock */,
 				DC2562C5202931D8006E4438 /* Sources */,
 				DC2562C6202931D8006E4438 /* Frameworks */,
 				DC2562C7202931D8006E4438 /* Resources */,
+				C9BE16D092F5C12CDF444B9D /* [CP] Embed Pods Frameworks */,
+				01A3E05D40230F382EC4AFBB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC2562F4202931D8006E4438 /* Build configuration list for PBXNativeTarget "RoastMeTests" */;
 			buildPhases = (
+				33031063D46F786D9FBA6350 /* [CP] Check Pods Manifest.lock */,
 				DC2562D9202931D8006E4438 /* Sources */,
 				DC2562DA202931D8006E4438 /* Frameworks */,
 				DC2562DB202931D8006E4438 /* Resources */,
+				E70855BF0C3A8DD22A42678A /* [CP] Embed Pods Frameworks */,
+				98D012CDE98F2950FC342035 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC2562F7202931D8006E4438 /* Build configuration list for PBXNativeTarget "RoastMeUITests" */;
 			buildPhases = (
+				A007D04A2F11F35582078BC2 /* [CP] Check Pods Manifest.lock */,
 				DC2562E4202931D8006E4438 /* Sources */,
 				DC2562E5202931D8006E4438 /* Frameworks */,
 				DC2562E6202931D8006E4438 /* Resources */,
+				2E59C12A163080E05C9A5ABD /* [CP] Embed Pods Frameworks */,
+				A8BDD20D12007B98415A053A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC2562D7202931D8006E4438 /* LaunchScreen.storyboard in Resources */,
+				9F3F9F02203E62DB00B47AEE /* GoogleService-Info.plist in Resources */,
 				DC2562D4202931D8006E4438 /* Assets.xcassets in Resources */,
 				DC2562D2202931D8006E4438 /* Main.storyboard in Resources */,
 			);
@@ -259,6 +312,205 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01A3E05D40230F382EC4AFBB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RoastMe/Pods-RoastMe-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoastMe/Pods-RoastMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E59C12A163080E05C9A5ABD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoastMeUITests/Pods-RoastMeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33031063D46F786D9FBA6350 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoastMeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98D012CDE98F2950FC342035 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoastMeTests/Pods-RoastMeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A007D04A2F11F35582078BC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoastMeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A63C53E69F479B91CD75BEEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoastMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8BDD20D12007B98415A053A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoastMeUITests/Pods-RoastMeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9BE16D092F5C12CDF444B9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RoastMe/Pods-RoastMe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoastMe/Pods-RoastMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E70855BF0C3A8DD22A42678A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoastMeTests/Pods-RoastMeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC2562C5202931D8006E4438 /* Sources */ = {
@@ -418,6 +670,7 @@
 		};
 		DC2562F2202931D8006E4438 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1A79966F085F65E72E3C171 /* Pods-RoastMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Play/Info.plist;
@@ -430,6 +683,7 @@
 		};
 		DC2562F3202931D8006E4438 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CB09C91D724BE3E1CEF69EB /* Pods-RoastMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Play/Info.plist;
@@ -442,6 +696,7 @@
 		};
 		DC2562F5202931D8006E4438 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E67AAD54A77DF3C3200564 /* Pods-RoastMeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +711,7 @@
 		};
 		DC2562F6202931D8006E4438 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24A49E747C9BEF0AAA543BD3 /* Pods-RoastMeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -470,6 +726,7 @@
 		};
 		DC2562F8202931D8006E4438 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B023303C595395B9235D68BD /* Pods-RoastMeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = PlayUITests/Info.plist;
@@ -483,6 +740,7 @@
 		};
 		DC2562F9202931D8006E4438 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 493B82479A88ADE51E8A8BD8 /* Pods-RoastMeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = PlayUITests/Info.plist;
