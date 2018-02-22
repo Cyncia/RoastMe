@@ -9,23 +9,23 @@
 import Foundation
 import Firebase
 
-func getRandomRoasts(Post) {
+func getRandomRoasts(/*Post*/) {
     
 }
 
-func upvote(Roast) {
+func upvote(/*Roast*/) {
     
 }
 
-func unUpvote(Roast) {
+func unUpvote(/*Roast*/) {
     
 }
 
-func getAllRoasts(Post) {
+func getAllRoasts(/*Post*/) {
     
 }
 
-func sendRoast(Post) {
+func sendRoast(/*Post*/) {
     
 }
 
