@@ -10,6 +10,7 @@
 		6BEC3A3DF0B735D8F12E1E2D /* Pods_RoastMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48EB932AF426E7DD80D979A /* Pods_RoastMeTests.framework */; };
 		9DB9773251DE633B2B7E00D8 /* Pods_RoastMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C163035949ADAF8573D93E /* Pods_RoastMe.framework */; };
 		9F3F9F02203E62DB00B47AEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F3F9F01203E62DB00B47AEE /* GoogleService-Info.plist */; };
+		9F3F9F04203E719800B47AEE /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3F9F03203E719800B47AEE /* api.swift */; };
 		9F97C0FC12B1D7872F0C0557 /* Pods_RoastMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BDFD2981F331EB425513AA /* Pods_RoastMeUITests.framework */; };
 		DC2562CD202931D8006E4438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562CC202931D8006E4438 /* AppDelegate.swift */; };
 		DC2562CF202931D8006E4438 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562CE202931D8006E4438 /* HomeScreen.swift */; };
@@ -46,6 +47,7 @@
 		493B82479A88ADE51E8A8BD8 /* Pods-RoastMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMeUITests/Pods-RoastMeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7CB09C91D724BE3E1CEF69EB /* Pods-RoastMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMe/Pods-RoastMe.release.xcconfig"; sourceTree = "<group>"; };
 		9F3F9F01203E62DB00B47AEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9F3F9F03203E719800B47AEE /* api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
 		A48EB932AF426E7DD80D979A /* Pods_RoastMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoastMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B023303C595395B9235D68BD /* Pods-RoastMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMeUITests/Pods-RoastMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC2562C9202931D8006E4438 /* RoastMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoastMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				DC2562CC202931D8006E4438 /* AppDelegate.swift */,
+				9F3F9F03203E719800B47AEE /* api.swift */,
 				DC2562CE202931D8006E4438 /* HomeScreen.swift */,
 				DC2562D0202931D8006E4438 /* Main.storyboard */,
 				DC86DCDF202A69A3004D974E /* VoteViewController.swift */,
@@ -517,6 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F3F9F04203E719800B47AEE /* api.swift in Sources */,
 				DC86DCE2202A69B9004D974E /* RoastViewController.swift in Sources */,
 				DC86DCE0202A69A3004D974E /* VoteViewController.swift in Sources */,
 				DC2562CF202931D8006E4438 /* HomeScreen.swift in Sources */,
