@@ -58,6 +58,10 @@ class ViewController: UIViewController {
        // self.top_bar.applyGradient()
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        helper()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
