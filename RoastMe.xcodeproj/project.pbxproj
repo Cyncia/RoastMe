@@ -149,6 +149,7 @@
 				9F3F9F03203E719800B47AEE /* api.swift */,
 				DC2562CE202931D8006E4438 /* HomeScreen.swift */,
 				DC2562D0202931D8006E4438 /* Main.storyboard */,
+				DC8CC73A203E82AF001FCBD9 /* ProfileViewController.swift */,
 				DC86DCDF202A69A3004D974E /* VoteViewController.swift */,
 				DC86DCE1202A69B9004D974E /* RoastViewController.swift */,
 				DC2562D3202931D8006E4438 /* Assets.xcassets */,
