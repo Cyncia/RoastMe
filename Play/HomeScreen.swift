@@ -47,6 +47,8 @@ class ViewController: UIViewController {
 
     @IBOutlet var top_bar: UIView!
     
+    let interactor = Interactor()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -63,11 +65,31 @@ class ViewController: UIViewController {
         helper()
     }
 
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+/*
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationViewController = segue.destination as? VoteViewController {
+            destinationViewController.transitioningDelegate = self
+            destinationViewController.interactor = interactor
+        }
+    }
+*/
 
+}
+
+
+extension ViewController: UIViewControllerTransitioningDelegate {
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return DismissAnimator()
+    }
+    
+    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return interactor.hasStarted ? interactor : nil
+    }
 }
 

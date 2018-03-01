@@ -21,6 +21,12 @@
 		DC2562ED202931D8006E4438 /* PlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562EC202931D8006E4438 /* PlayUITests.swift */; };
 		DC86DCE0202A69A3004D974E /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86DCDF202A69A3004D974E /* VoteViewController.swift */; };
 		DC86DCE2202A69B9004D974E /* RoastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86DCE1202A69B9004D974E /* RoastViewController.swift */; };
+		DC8CC739203E6CC4001FCBD9 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8CC738203E6CC4001FCBD9 /* LeaderboardViewController.swift */; };
+		DC8CC73B203E82AF001FCBD9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8CC73A203E82AF001FCBD9 /* ProfileViewController.swift */; };
+		DCCB273320476BDB00DB289B /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB273220476BDB00DB289B /* CustomSegue.swift */; };
+		DCCB27352047779B00DB289B /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB27342047779B00DB289B /* DismissAnimator.swift */; };
+		DCCB273720477D3F00DB289B /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB273620477D3F00DB289B /* Interactor.swift */; };
+		DCCB2739204790B300DB289B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB2738204790B300DB289B /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +71,15 @@
 		DC2562EE202931D8006E4438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC86DCDF202A69A3004D974E /* VoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteViewController.swift; sourceTree = "<group>"; };
 		DC86DCE1202A69B9004D974E /* RoastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoastViewController.swift; sourceTree = "<group>"; };
+
 		F1A79966F085F65E72E3C171 /* Pods-RoastMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMe/Pods-RoastMe.debug.xcconfig"; sourceTree = "<group>"; };
 		F3E67AAD54A77DF3C3200564 /* Pods-RoastMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMeTests/Pods-RoastMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC8CC738203E6CC4001FCBD9 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		DC8CC73A203E82AF001FCBD9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DCCB273220476BDB00DB289B /* CustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
+		DCCB27342047779B00DB289B /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
+		DCCB273620477D3F00DB289B /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		DCCB2738204790B300DB289B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,9 +161,15 @@
 				DC2562CC202931D8006E4438 /* AppDelegate.swift */,
 				9F3F9F03203E719800B47AEE /* api.swift */,
 				DC2562CE202931D8006E4438 /* HomeScreen.swift */,
-				DC2562D0202931D8006E4438 /* Main.storyboard */,
+				DC8CC73A203E82AF001FCBD9 /* ProfileViewController.swift */,
 				DC86DCDF202A69A3004D974E /* VoteViewController.swift */,
 				DC86DCE1202A69B9004D974E /* RoastViewController.swift */,
+				DC8CC738203E6CC4001FCBD9 /* LeaderboardViewController.swift */,
+				DC2562D0202931D8006E4438 /* Main.storyboard */,
+				DCCB2738204790B300DB289B /* TableViewController.swift */,
+				DCCB273620477D3F00DB289B /* Interactor.swift */,
+				DCCB27342047779B00DB289B /* DismissAnimator.swift */,
+				DCCB273220476BDB00DB289B /* CustomSegue.swift */,
 				DC2562D3202931D8006E4438 /* Assets.xcassets */,
 				DC2562D5202931D8006E4438 /* LaunchScreen.storyboard */,
 				DC2562D8202931D8006E4438 /* Info.plist */,
@@ -520,11 +539,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
 				9F3F9F04203E719800B47AEE /* api.swift in Sources */,
+
+				DC8CC73B203E82AF001FCBD9 /* ProfileViewController.swift in Sources */,
+
 				DC86DCE2202A69B9004D974E /* RoastViewController.swift in Sources */,
 				DC86DCE0202A69A3004D974E /* VoteViewController.swift in Sources */,
+				DCCB2739204790B300DB289B /* TableViewController.swift in Sources */,
+				DCCB273720477D3F00DB289B /* Interactor.swift in Sources */,
 				DC2562CF202931D8006E4438 /* HomeScreen.swift in Sources */,
+				DCCB273320476BDB00DB289B /* CustomSegue.swift in Sources */,
+				DC8CC739203E6CC4001FCBD9 /* LeaderboardViewController.swift in Sources */,
 				DC2562CD202931D8006E4438 /* AppDelegate.swift in Sources */,
+				DCCB27352047779B00DB289B /* DismissAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
