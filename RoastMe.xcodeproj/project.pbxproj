@@ -10,6 +10,8 @@
 		6BEC3A3DF0B735D8F12E1E2D /* Pods_RoastMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48EB932AF426E7DD80D979A /* Pods_RoastMeTests.framework */; };
 		9DB9773251DE633B2B7E00D8 /* Pods_RoastMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C163035949ADAF8573D93E /* Pods_RoastMe.framework */; };
 		9F12D8142046323F00050740 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F12D8132046323F00050740 /* GoogleService-Info.plist */; };
+		9F13A1BA204A638B00D19E4C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F13A1B9204A638B00D19E4C /* LoginViewController.swift */; };
+		9F13A1BC204A64B600D19E4C /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F13A1BB204A64B600D19E4C /* NewPostViewController.swift */; };
 		9F3F9F04203E719800B47AEE /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3F9F03203E719800B47AEE /* api.swift */; };
 		9F97C0FC12B1D7872F0C0557 /* Pods_RoastMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BDFD2981F331EB425513AA /* Pods_RoastMeUITests.framework */; };
 		DC2562CD202931D8006E4438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562CC202931D8006E4438 /* AppDelegate.swift */; };
@@ -53,6 +55,8 @@
 		493B82479A88ADE51E8A8BD8 /* Pods-RoastMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMeUITests/Pods-RoastMeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7CB09C91D724BE3E1CEF69EB /* Pods-RoastMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMe/Pods-RoastMe.release.xcconfig"; sourceTree = "<group>"; };
 		9F12D8132046323F00050740 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9F13A1B9204A638B00D19E4C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "/Users/alexanderchen/Documents/IOS Projects/RoastMe/Play/LoginViewController.swift"; sourceTree = "<absolute>"; };
+		9F13A1BB204A64B600D19E4C /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		9F3F9F03203E719800B47AEE /* api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
 		A48EB932AF426E7DD80D979A /* Pods_RoastMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoastMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B023303C595395B9235D68BD /* Pods-RoastMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMeUITests/Pods-RoastMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -157,15 +161,16 @@
 		DC2562CB202931D8006E4438 /* Play */ = {
 			isa = PBXGroup;
 			children = (
+				9F13A1B9204A638B00D19E4C /* LoginViewController.swift */,
 				DC2562CC202931D8006E4438 /* AppDelegate.swift */,
 				9F3F9F03203E719800B47AEE /* api.swift */,
 				DC2562CE202931D8006E4438 /* HomeScreen.swift */,
-				DC2562D0202931D8006E4438 /* Main.storyboard */,
 				DC8CC73A203E82AF001FCBD9 /* ProfileViewController.swift */,
 				DC86DCDF202A69A3004D974E /* VoteViewController.swift */,
 				DC86DCE1202A69B9004D974E /* RoastViewController.swift */,
 				DC8CC738203E6CC4001FCBD9 /* LeaderboardViewController.swift */,
 				DC2562D0202931D8006E4438 /* Main.storyboard */,
+				9F13A1BB204A64B600D19E4C /* NewPostViewController.swift */,
 				DCCB2738204790B300DB289B /* TableViewController.swift */,
 				DCCB273620477D3F00DB289B /* Interactor.swift */,
 				DCCB27342047779B00DB289B /* DismissAnimator.swift */,
@@ -474,12 +479,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RoastMe/Pods-RoastMe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -511,6 +518,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F13A1BA204A638B00D19E4C /* LoginViewController.swift in Sources */,
+				9F13A1BC204A64B600D19E4C /* NewPostViewController.swift in Sources */,
 				9F3F9F04203E719800B47AEE /* api.swift in Sources */,
 				DC8CC73B203E82AF001FCBD9 /* ProfileViewController.swift in Sources */,
 				DC86DCE2202A69B9004D974E /* RoastViewController.swift in Sources */,
