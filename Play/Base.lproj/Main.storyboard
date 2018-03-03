@@ -60,6 +60,60 @@
             </objects>
             <point key="canvasLocation" x="1090" y="-483"/>
         </scene>
+        <!--New Post-->
+        <scene sceneID="f0a-yD-Xaj">
+            <objects>
+                <viewController title="New Post" id="DaE-aX-Ruw" customClass="NewPostViewController" customModule="RoastMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MCD-pi-HGt"/>
+                        <viewControllerLayoutGuide type="bottom" id="o9s-a7-uNd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nNA-Pb-gLe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrF-H8-R6O">
+                                <rect key="frame" x="104" y="256" width="166" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Upload Photo"/>
+                                <connections>
+                                    <action selector="uploadButtonWasPressed:" destination="DaE-aX-Ruw" eventType="touchUpInside" id="wnO-iE-5jn"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p7S-hX-FSY">
+                                <rect key="frame" x="70" y="237" width="234" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="p7S-hX-FSY" id="hdp-HB-VWD"/>
+                        <outlet property="uploadButton" destination="qrF-H8-R6O" id="SH9-Y8-mSo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S2N-Q7-hpa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1904.8" y="-57.121439280359823"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="cW1-9N-aH3">
+            <objects>
+                <viewController title="Login View Controller" id="ChC-gi-AJL" customClass="LoginViewController" customModule="RoastMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AZX-tq-5YZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="HAP-kP-hDa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fxt-yc-fex">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DgH-Zd-eyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1023.2" y="-75.112443778110944"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -846,4 +900,7 @@ AABUAAAAAAAAAAAAAAAAAAAT6w
 </mutableData>
         </image>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6Uf-SV-5bz"/>
+    </inferredMetricsTieBreakers>
 </document>

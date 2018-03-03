@@ -111,15 +111,16 @@ func getUserFromRoast(roastId: String, completion: @escaping (String) -> ()) {
 /**********************************************
  POSTS
  *********************************************/
-func createPost(userId: String) -> String {
+func createPost(userId: String, picURL: String) -> String {
     //update Post table
     let postId = postsRef.childByAutoId().key
-    let post = ["userId": userId]
+    let post = ["userId": userId,
+                "picURL": picURL]
     let updates = [postId: post]
     postsRef.updateChildValues(updates)
     
     //update User table
-    usersRef.child(userId).child("posts").child(postId).setValue("picture")
+    usersRef.child(userId).child("posts").child(postId).setValue(picURL)
     
     return postId
 }

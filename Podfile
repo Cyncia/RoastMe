@@ -8,7 +8,8 @@ target 'RoastMe' do
   # Pods for RoastMe
 pod 'Firebase'
 pod 'Firebase/Database'
-# pod 'FirebaseUI'
+pod 'Firebase/Core'
+pod 'Firebase/Storage'
 
   target 'RoastMeTests' do
     inherit! :search_paths
