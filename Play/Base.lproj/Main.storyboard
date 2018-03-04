@@ -183,30 +183,17 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-<<<<<<< HEAD
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="BXo-mk-aKh">
                                         <rect key="frame" x="0.0" y="111.5" width="343" height="29.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkX-9d-Jsv">
                                                 <rect key="frame" x="0.0" y="0.0" width="41" height="29.5"/>
-=======
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="BXo-mk-aKh">
-                                        <rect key="frame" x="0.0" y="112" width="343" height="29"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkX-9d-Jsv">
-                                                <rect key="frame" x="0.0" y="0.0" width="41" height="29"/>
->>>>>>> All Roast Page
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-<<<<<<< HEAD
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ax-6X-MH9">
                                                 <rect key="frame" x="94" y="0.0" width="249" height="29.5"/>
-=======
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ax-6X-MH9">
-                                                <rect key="frame" x="94" y="0.0" width="249" height="29"/>
->>>>>>> All Roast Page
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -327,13 +314,8 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-<<<<<<< HEAD
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Tku-Zb-pg6">
                                         <rect key="frame" x="45" y="27" width="49" height="33"/>
-=======
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Tku-Zb-pg6">
-                                        <rect key="frame" x="29" y="27" width="49" height="33"/>
->>>>>>> All Roast Page
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOh-fU-2eX">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="33"/>
@@ -1203,10 +1185,6 @@ AABUAAAAAAAAAAAAAAAAAAAT6w
         <image name="backicon" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
         <segue reference="lHW-ac-rc1"/>
-=======
-        <segue reference="Lz3-2x-5bo"/>
->>>>>>> All Roast Page
     </inferredMetricsTieBreakers>
 </document>
