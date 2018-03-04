@@ -56,19 +56,11 @@ class RoastViewController: UIViewController {
         
         self.hideKeyboardWhenTappedAround()
         
-        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
-        swipeUp.direction = UISwipeGestureRecognizerDirection.up
-        self.view.addGestureRecognizer(swipeUp)
-        
         PostBox.layer.cornerRadius = 10.0
         PostBox.clipsToBounds = true
         
-        let swipe_Down = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
-        swipe_Down.direction = UISwipeGestureRecognizerDirection.down
-        self.view.addGestureRecognizer(swipe_Down)
         
-        
-    } // end of viewDidLoad
+    }
     
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
@@ -86,26 +78,6 @@ class RoastViewController: UIViewController {
         }
     }
     
-    /*
-    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
-        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
-                let newViewController = RoastViewController()
-                self.navigationController?.pushViewController(newViewController, animated: true)
-        }
-    }
-    */
-    
-    func swipeAction(swipe: UISwipeGestureRecognizer) {
-        switch swipe.direction{
-        case UISwipeGestureRecognizerDirection.up:
-            performSegue(withIdentifier: "swipeUp", sender: self)
-        case UISwipeGestureRecognizerDirection.down:
-            performSegue(withIdentifier: "swipeDown", sender: self)
-        default:
-            break
-        }
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
