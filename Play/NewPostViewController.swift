@@ -35,7 +35,10 @@ class NewPostViewController: UIViewController {
     }
     
     func uploadImageToFirebaseStorage(data: Data) {
-        let roastsRef = Storage.storage().reference().child("roasts/test.jpg")
+        
+        let postId = createPost()
+        
+        let roastsRef = Storage.storage().reference().child("roasts/\(postId).jpg")
         let uploadMetadata = StorageMetadata()
         uploadMetadata.contentType = "image/jpeg"
         let uploadTask = roastsRef.putData(data, metadata: uploadMetadata, completion: { (metadata, error) in
@@ -50,8 +53,8 @@ class NewPostViewController: UIViewController {
                 let end = url.index(url.endIndex, offsetBy: -1)
                 let range = start..<end
                 url = url[range]
-
-                createPost(picURL: url)
+                
+                addURL(postId: postId, picURL: url)
             }
         })
         //Update progress bar

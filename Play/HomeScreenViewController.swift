@@ -11,29 +11,47 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var top_bar: UIView!
-    @IBOutlet weak var newPostButton: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
     
     let interactor = Interactor()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        getNextPost { (postId) in
+            getPicURL(postId: postId, completion: { (url) in
+                do {
+                    let imgData = try Data(contentsOf: url)
+                    self.imageView.image = UIImage(data: imgData)
+                } catch {
+                    print("Could not download image from URL.")
+                }
+            })
+        }
         // Do any additional setup after loading the view, typically from a nib.
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        helper()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func newPostButtonTapped(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToNewPost", sender: self)
+
+    @IBAction func leftSwipe(_ sender: UISwipeGestureRecognizer) {
+        getNextPost { (postId) in
+            getPicURL(postId: postId, completion: { (url) in
+                do {
+                    let imgData = try Data(contentsOf: url)
+                    self.imageView.image = UIImage(data: imgData)
+                } catch {
+                    print("Could not download image from URL.")
+                }
+            })
+        }
     }
-    
     
 }
 
