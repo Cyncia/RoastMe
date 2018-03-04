@@ -12,6 +12,9 @@ import MobileCoreServices
 
 class NewPostViewController: UIViewController {
 
+    var history = [String]()
+    var curr = -1
+    
     @IBOutlet weak var uploadButton: UIButton!
     @IBOutlet weak var progressView: UIProgressView!
     
@@ -66,6 +69,20 @@ class NewPostViewController: UIViewController {
         
         uploadTask.observe(.success) { snapshot in
             self.performSegue(withIdentifier: "goToHomeFromNewPost", sender: self)
+        }
+    }
+    
+    
+    @IBAction func backButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToHomeFromNewPost", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToHomeFromNewPost" {
+            if let destination = segue.destination as? ViewController {
+                destination.history = history
+                destination.curr = curr
+            }
         }
     }
     

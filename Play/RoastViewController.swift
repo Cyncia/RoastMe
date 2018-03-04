@@ -22,6 +22,9 @@ extension UIViewController {
 
 class RoastViewController: UIViewController {
 
+    var history = [String]()
+    var curr = -1
+    
     @IBOutlet var PostBox: UITextView!
     
     // define a variable to store initial touch position
@@ -82,16 +85,19 @@ class RoastViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func postButtonTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToAllRoastsFromRoast", sender: self)
     }
-    */
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToAllRoastsFromVote" {
+            if let destination = segue.destination as? AllRoastsViewController {
+                destination.history = history
+                destination.curr = curr
+            }
+        }
+    }
+    
 }

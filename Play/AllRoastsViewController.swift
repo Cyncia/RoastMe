@@ -10,6 +10,9 @@ import UIKit
 
 class AllRoastsViewController: UIViewController {
 
+    var history = [String]()
+    var curr = -1
+    
     @IBOutlet var Chart: UITableView!
     
     var users: [User] = []
@@ -48,6 +51,15 @@ class AllRoastsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToHomeFromAllRoasts" {
+            if let destination = segue.destination as? ViewController {
+                destination.history = history
+                destination.curr = curr
+            }
+        }
     }
 
 }

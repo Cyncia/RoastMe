@@ -10,7 +10,9 @@ import UIKit
 
 class VoteViewController: UIViewController {
 
- 
+    var history = [String]()
+    var curr = -1
+    
     @IBOutlet var Roast1: UIView!
     @IBOutlet var Roast2: UIView!
     @IBOutlet var Roast3: UIView!
@@ -62,15 +64,27 @@ class VoteViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func roastOneTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToAllRoastsFromVote", sender: self)
     }
-    */
-
+    @IBAction func roastTwoTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToAllRoastsFromVote", sender: self)
+    }
+    @IBAction func roastThreeTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToAllRoastsFromVote", sender: self)
+    }
+    @IBAction func roastFourTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToAllRoastsFromVote", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToAllRoastsFromVote" {
+            if let destination = segue.destination as? AllRoastsViewController {
+                destination.history = history
+                destination.curr = curr
+            }
+        }
+    }
+    
 }
