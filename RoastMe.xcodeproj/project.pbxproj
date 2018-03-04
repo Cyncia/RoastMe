@@ -15,7 +15,7 @@
 		9F3F9F04203E719800B47AEE /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3F9F03203E719800B47AEE /* api.swift */; };
 		9F97C0FC12B1D7872F0C0557 /* Pods_RoastMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BDFD2981F331EB425513AA /* Pods_RoastMeUITests.framework */; };
 		DC2562CD202931D8006E4438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562CC202931D8006E4438 /* AppDelegate.swift */; };
-		DC2562CF202931D8006E4438 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562CE202931D8006E4438 /* HomeScreen.swift */; };
+		DC2562CF202931D8006E4438 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562CE202931D8006E4438 /* HomeScreenViewController.swift */; };
 		DC2562D2202931D8006E4438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2562D0202931D8006E4438 /* Main.storyboard */; };
 		DC2562D4202931D8006E4438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2562D3202931D8006E4438 /* Assets.xcassets */; };
 		DC2562D7202931D8006E4438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2562D5202931D8006E4438 /* LaunchScreen.storyboard */; };
@@ -62,7 +62,7 @@
 		B023303C595395B9235D68BD /* Pods-RoastMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMeUITests/Pods-RoastMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC2562C9202931D8006E4438 /* RoastMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoastMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2562CC202931D8006E4438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC2562CE202931D8006E4438 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		DC2562CE202931D8006E4438 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		DC2562D1202931D8006E4438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC2562D3202931D8006E4438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC2562D6202931D8006E4438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 				9F13A1B9204A638B00D19E4C /* LoginViewController.swift */,
 				DC2562CC202931D8006E4438 /* AppDelegate.swift */,
 				9F3F9F03203E719800B47AEE /* api.swift */,
-				DC2562CE202931D8006E4438 /* HomeScreen.swift */,
+				DC2562CE202931D8006E4438 /* HomeScreenViewController.swift */,
 				DC8CC73A203E82AF001FCBD9 /* ProfileViewController.swift */,
 				DC86DCDF202A69A3004D974E /* VoteViewController.swift */,
 				DC86DCE1202A69B9004D974E /* RoastViewController.swift */,
@@ -526,7 +526,7 @@
 				DC86DCE0202A69A3004D974E /* VoteViewController.swift in Sources */,
 				DCCB2739204790B300DB289B /* TableViewController.swift in Sources */,
 				DCCB273720477D3F00DB289B /* Interactor.swift in Sources */,
-				DC2562CF202931D8006E4438 /* HomeScreen.swift in Sources */,
+				DC2562CF202931D8006E4438 /* HomeScreenViewController.swift in Sources */,
 				DCCB273320476BDB00DB289B /* CustomSegue.swift in Sources */,
 				DC8CC739203E6CC4001FCBD9 /* LeaderboardViewController.swift in Sources */,
 				DC2562CD202931D8006E4438 /* AppDelegate.swift in Sources */,

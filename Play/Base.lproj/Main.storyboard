@@ -73,29 +73,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrF-H8-R6O">
-                                <rect key="frame" x="104" y="256" width="166" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Upload Photo"/>
-                                <connections>
-                                    <action selector="uploadButtonWasPressed:" destination="DaE-aX-Ruw" eventType="touchUpInside" id="wnO-iE-5jn"/>
-                                </connections>
-                            </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p7S-hX-FSY">
-                                <rect key="frame" x="70" y="237" width="234" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="l84-sH-4Si">
+                                <rect key="frame" x="16" y="307.5" width="343" height="52"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="p7S-hX-FSY">
+                                        <rect key="frame" x="20" y="0.0" width="303" height="2"/>
+                                    </progressView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrF-H8-R6O">
+                                        <rect key="frame" x="124.5" y="22" width="94" height="30"/>
+                                        <state key="normal" title="Upload Photo"/>
+                                        <connections>
+                                            <action selector="uploadButtonWasPressed:" destination="DaE-aX-Ruw" eventType="touchUpInside" id="wnO-iE-5jn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="p7S-hX-FSY" firstAttribute="leading" secondItem="l84-sH-4Si" secondAttribute="leading" constant="20" id="TMs-2P-M1G"/>
+                                    <constraint firstAttribute="trailing" secondItem="p7S-hX-FSY" secondAttribute="trailing" constant="20" id="hpw-hD-Hrm"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l84-sH-4Si" firstAttribute="leading" secondItem="nNA-Pb-gLe" secondAttribute="leadingMargin" id="P6B-lO-caL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l84-sH-4Si" secondAttribute="trailing" id="cI5-GK-9cc"/>
+                            <constraint firstItem="l84-sH-4Si" firstAttribute="centerX" secondItem="nNA-Pb-gLe" secondAttribute="centerX" id="mHd-GC-aLX"/>
+                            <constraint firstItem="l84-sH-4Si" firstAttribute="centerY" secondItem="nNA-Pb-gLe" secondAttribute="centerY" id="mpg-Cv-k7z"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="progressView" destination="p7S-hX-FSY" id="hdp-HB-VWD"/>
                         <outlet property="uploadButton" destination="qrF-H8-R6O" id="SH9-Y8-mSo"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToHomeFromNewPost" id="AuB-yH-HK2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S2N-Q7-hpa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1904.8" y="-57.121439280359823"/>
+            <point key="canvasLocation" x="-1721" y="305"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="cW1-9N-aH3">
@@ -125,7 +139,7 @@
                                             <action selector="signInSelectorChanged:" destination="ChC-gi-AJL" eventType="valueChanged" id="AIh-nY-yoh"/>
                                         </connections>
                                     </segmentedControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45x-mN-gbE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45x-mN-gbE">
                                         <rect key="frame" x="145.5" y="61" width="52" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -165,7 +179,7 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSe-2S-u4c">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSe-2S-u4c">
                                         <rect key="frame" x="148" y="231" width="47" height="30"/>
                                         <state key="normal" title="Sign In"/>
                                         <connections>
@@ -213,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DgH-Zd-eyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1023.2" y="-75.112443778110944"/>
+            <point key="canvasLocation" x="-799" y="-802"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -277,15 +291,18 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pw-hz-qfu">
-                                        <rect key="frame" x="308" y="26" width="40" height="32"/>
+                                        <rect key="frame" x="315" y="23.5" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="hB2-qs-9X8"/>
+                                            <constraint firstAttribute="height" constant="40" id="hB2-qs-9X8"/>
                                             <constraint firstAttribute="width" constant="40" id="vrT-t5-t4R"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="5  &gt;&gt;">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                        <state key="normal" title="+">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="newPostButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xEJ-Kv-VPa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="0.60255244006849318" colorSpace="calibratedRGB"/>
@@ -293,28 +310,15 @@
                                 <constraints>
                                     <constraint firstItem="Tku-Zb-pg6" firstAttribute="centerY" secondItem="BUx-Vw-ICN" secondAttribute="centerY" id="B9q-Sa-G9Q"/>
                                     <constraint firstItem="y4z-cg-Ru3" firstAttribute="centerX" secondItem="BUx-Vw-ICN" secondAttribute="centerX" id="Dka-qI-g6r"/>
-                                    <constraint firstItem="4pw-hz-qfu" firstAttribute="top" secondItem="BUx-Vw-ICN" secondAttribute="top" constant="26" id="Jfd-ac-tu4"/>
                                     <constraint firstItem="kko-y3-dEo" firstAttribute="top" secondItem="BUx-Vw-ICN" secondAttribute="top" constant="26" id="KD9-WU-4gU"/>
                                     <constraint firstAttribute="width" secondItem="BUx-Vw-ICN" secondAttribute="height" multiplier="125:29" id="MDn-lC-tLk"/>
                                     <constraint firstItem="y4z-cg-Ru3" firstAttribute="top" secondItem="kko-y3-dEo" secondAttribute="bottom" constant="8" id="Ojm-PJ-aZt"/>
-                                    <constraint firstAttribute="trailing" secondItem="4pw-hz-qfu" secondAttribute="trailing" constant="27" id="PC6-Ca-oUD"/>
+                                    <constraint firstAttribute="trailing" secondItem="4pw-hz-qfu" secondAttribute="trailing" constant="20" id="PC6-Ca-oUD"/>
+                                    <constraint firstItem="4pw-hz-qfu" firstAttribute="centerY" secondItem="BUx-Vw-ICN" secondAttribute="centerY" id="eYX-4O-7nB"/>
                                     <constraint firstItem="kko-y3-dEo" firstAttribute="centerX" secondItem="BUx-Vw-ICN" secondAttribute="centerX" id="oFc-8g-6EH"/>
                                     <constraint firstItem="Tku-Zb-pg6" firstAttribute="centerY" secondItem="BUx-Vw-ICN" secondAttribute="centerY" id="oY6-C8-leQ"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEL-tw-uoN">
-                                <rect key="frame" x="317" y="563" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="&lt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCQ-Fz-XSF">
-                                <rect key="frame" x="32" y="576.5" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJO-Pq-mtB">
                                 <rect key="frame" x="0.0" y="597" width="375" height="70"/>
                                 <subviews>
@@ -355,7 +359,6 @@
                         <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="UNj-4Y-Wit" secondAttribute="trailing" id="3W2-cT-XHO"/>
-                            <constraint firstItem="WJO-Pq-mtB" firstAttribute="top" secondItem="tCQ-Fz-XSF" secondAttribute="bottom" id="5Yc-bs-UD8"/>
                             <constraint firstItem="BUx-Vw-ICN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AYX-pz-kpx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WJO-Pq-mtB" secondAttribute="bottom" id="EwZ-Ui-w1m"/>
                             <constraint firstAttribute="trailing" secondItem="WJO-Pq-mtB" secondAttribute="trailing" id="Fpz-gc-TPQ"/>
@@ -368,7 +371,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="newPostButton" destination="4pw-hz-qfu" id="GSD-59-d64"/>
                         <outlet property="top_bar" destination="BUx-Vw-ICN" id="3mP-nB-D0e"/>
+                        <segue destination="DaE-aX-Ruw" kind="show" identifier="goToNewPost" id="RPt-k3-onb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -1002,6 +1007,6 @@ AABUAAAAAAAAAAAAAAAAAAAT6w
         </image>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lHW-ac-rc1"/>
+        <segue reference="AuB-yH-HK2"/>
     </inferredMetricsTieBreakers>
 </document>
