@@ -165,14 +165,12 @@
 		DC2562CB202931D8006E4438 /* Play */ = {
 			isa = PBXGroup;
 			children = (
-				DCD7DC92204BA25700AA3B4D /* LoginViewController.swift */,
 				DC2562CC202931D8006E4438 /* AppDelegate.swift */,
 				9F3F9F03203E719800B47AEE /* api.swift */,
 				DCD7DC99204BBA1B00AA3B4D /* Screens */,
 				DC2562D0202931D8006E4438 /* Main.storyboard */,
 				DC34D952204BFD160005FCEC /* Assets.xcassets */,
 				DCD7DC9A204BBB1400AA3B4D /* User.swift */,
-				9F13A1BB204A64B600D19E4C /* NewPostViewController.swift */,
 				DCD7DC98204BB9F300AA3B4D /* Transition/Other */,
 				DC2562D5202931D8006E4438 /* LaunchScreen.storyboard */,
 				DC2562D8202931D8006E4438 /* Info.plist */,
@@ -213,6 +211,8 @@
 		DCD7DC99204BBA1B00AA3B4D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				DCD7DC92204BA25700AA3B4D /* LoginViewController.swift */,
+				9F13A1BB204A64B600D19E4C /* NewPostViewController.swift */,
 				DC2562CE202931D8006E4438 /* HomeScreenViewController.swift */,
 				DC8CC73A203E82AF001FCBD9 /* ProfileViewController.swift */,
 				DC86DCDF202A69A3004D974E /* VoteViewController.swift */,
