@@ -120,7 +120,7 @@ func getUserFromRoast(roastId: String, completion: @escaping (String) -> ()) {
 /**********************************************
  POSTS
  *********************************************/
-func createPost(picURL: String) -> String {
+func createPost() -> String {
     var postId: String = ""
     
     if let user = Auth.auth().currentUser {
@@ -128,16 +128,20 @@ func createPost(picURL: String) -> String {
     
         //update Post table
         postId = postsRef.childByAutoId().key
-        let post = ["userId": userId,
-                    "picURL": picURL]
+        let post = ["userId": userId]
         let updates = [postId: post]
         postsRef.updateChildValues(updates)
-        
-        //update User table
-        usersRef.child(userId).child("posts").child(postId).setValue(picURL)
     }
     
     return postId
+}
+
+func addURL(postId: String, picURL: String) {
+    if let user = Auth.auth().currentUser {
+        let userId = user.uid
+        postsRef.child(postId).child("picURL").setValue(picURL)
+        usersRef.child(userId).child("posts").child(postId).setValue(picURL)
+    }
 }
 
 func getRandomRoasts(postId: String, completion: @escaping ([String]) -> ()) {
@@ -199,6 +203,17 @@ func getUserFromPost(postId: String, completion: @escaping (String) -> ()) {
         let userId = value?["userId"] as? String ?? ""
         
         completion(userId)
+        
+    }) { (error) in
+        print(error.localizedDescription)
+    }
+}
+
+func getPicURL(postId: String, completion: @escaping (URL) -> ()) {
+    postsRef.child(postId).observeSingleEvent(of: .value, with: { (snapshot) in
+        let value = snapshot.value as? NSDictionary
+        let picURL = value?["picURL"] as? String ?? ""
+        completion(URL(string: picURL)!)
         
     }) { (error) in
         print(error.localizedDescription)
