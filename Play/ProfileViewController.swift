@@ -10,10 +10,17 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet var ProfilePic: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        ProfilePic.layer.cornerRadius = ProfilePic.frame.size.height / 2
+        ProfilePic.clipsToBounds = true
+        
     }
 
     override func didReceiveMemoryWarning() {
