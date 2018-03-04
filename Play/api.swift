@@ -151,7 +151,7 @@ func getRandomRoasts(postId: String, completion: @escaping ([String]) -> ()) {
         var roasts = roastsDict.allKeys as? [String] ?? [String]()
         var randomRoasts = [String]()
         
-        for _ in 0..<5 {
+        for _ in 0..<4 {
             if roasts.count == 0 {
                 break;
             }

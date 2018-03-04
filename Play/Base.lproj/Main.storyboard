@@ -712,7 +712,6 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="Eit-Mq-MPc"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="roastOneTapped:" destination="QlG-vJ-7Uf" eventType="touchUpInside" id="K6d-oL-QLL"/>
                                         </connections>
@@ -723,7 +722,6 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="Udm-YV-Tve"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="roastTwoTapped:" destination="QlG-vJ-7Uf" eventType="touchUpInside" id="SQ6-gn-z0F"/>
                                         </connections>
@@ -734,7 +732,6 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="dh8-JM-cz5"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="roastThreeTapped:" destination="QlG-vJ-7Uf" eventType="touchUpInside" id="ba2-TV-Ich"/>
                                         </connections>
@@ -745,7 +742,6 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="Eh1-Ad-QXX"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="roastFourTapped:" destination="QlG-vJ-7Uf" eventType="touchUpInside" id="IMH-tb-4uN"/>
                                         </connections>
@@ -783,10 +779,14 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="Roast1" destination="jBC-ZA-UXA" id="v67-s9-8wc"/>
-                        <outlet property="Roast2" destination="9Dd-Pz-Y0d" id="jho-qv-lq6"/>
-                        <outlet property="Roast3" destination="vpO-Py-P4G" id="5qc-us-r7x"/>
-                        <outlet property="Roast4" destination="YQg-Hp-g1S" id="E2M-qa-QuS"/>
+                        <outlet property="Roast1" destination="jBC-ZA-UXA" id="fbk-II-fJy"/>
+                        <outlet property="Roast2" destination="9Dd-Pz-Y0d" id="Cyy-ck-gW2"/>
+                        <outlet property="Roast3" destination="vpO-Py-P4G" id="mqb-pq-iwA"/>
+                        <outlet property="Roast4" destination="YQg-Hp-g1S" id="olp-Ll-d8U"/>
+                        <outlet property="roast1" destination="jBC-ZA-UXA" id="pZj-i2-Fv6"/>
+                        <outlet property="roast2" destination="9Dd-Pz-Y0d" id="vgt-hG-kHe"/>
+                        <outlet property="roast3" destination="vpO-Py-P4G" id="OMb-wk-Bv7"/>
+                        <outlet property="roast4" destination="YQg-Hp-g1S" id="hGh-Of-daV"/>
                         <segue destination="zJJ-ww-niJ" kind="show" identifier="goToAllRoastsFromVote" id="Q7r-AT-tJs"/>
                     </connections>
                 </viewController>
@@ -808,7 +808,7 @@
         <image name="backicon" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DuT-cS-dLk"/>
+        <segue reference="Q7r-AT-tJs"/>
         <segue reference="AuB-yH-HK2"/>
     </inferredMetricsTieBreakers>
 </document>
