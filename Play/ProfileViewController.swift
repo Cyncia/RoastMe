@@ -10,6 +10,9 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    var history = [String]()
+    var curr = -1
+    
     @IBOutlet var ProfilePic: UIImageView!
     
     
@@ -28,6 +31,15 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToHomeFromProfile" {
+            if let destination = segue.destination as? ViewController {
+                destination.history = history
+                destination.curr = curr
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation

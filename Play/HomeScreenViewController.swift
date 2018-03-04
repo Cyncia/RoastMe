@@ -89,8 +89,8 @@ class ViewController: UIViewController {
     }
     @IBAction func rightSwipe(_ sender: UISwipeGestureRecognizer) {
         print("right swipe detected")
-        curr -= 1
-        if(curr>=0) {
+        if(curr>0) {
+            curr -= 1
             let postId = history[curr]
             getPicURL(postId: postId, completion: { (url) in
                 do {
@@ -100,6 +100,34 @@ class ViewController: UIViewController {
                     print("Could not download image from URL.")
                 }
             })
+        }
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToVoteFromHome" {
+            if let destination = segue.destination as? VoteViewController {
+                destination.history = history
+                destination.curr = curr
+            }
+        }
+        else if segue.identifier == "goToRoastFromHome" {
+            if let destination = segue.destination as? RoastViewController {
+                destination.history = history
+                destination.curr = curr
+            }
+        }
+        else if segue.identifier == "goToProfileFromHome" {
+            if let destination = segue.destination as? ProfileViewController {
+                destination.history = history
+                destination.curr = curr
+            }
+        }
+        else if segue.identifier == "goToNewPostFromHome" {
+            if let destination = segue.destination as? NewPostViewController {
+                destination.history = history
+                destination.curr = curr
+            }
         }
     }
     

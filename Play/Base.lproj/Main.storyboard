@@ -55,7 +55,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="backicon"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Lz3-2x-5bo"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="goToHomeFromProfile" id="Lz3-2x-5bo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsI-Hi-k5c">
@@ -125,7 +125,7 @@
                                 <rect key="frame" x="36" y="40" width="24" height="24"/>
                                 <state key="normal" image="backicon"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="yLX-Sl-aGh"/>
+                                    <action selector="backButton:" destination="DaE-aX-Ruw" eventType="touchUpInside" id="a7k-Kl-Qi3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -326,7 +326,7 @@
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="GQu-3w-gh7" kind="showDetail" id="6Uf-SV-5bz"/>
+                                                    <segue destination="GQu-3w-gh7" kind="showDetail" identifier="goToProfileFromHome" id="6Uf-SV-5bz"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -342,7 +342,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="DaE-aX-Ruw" kind="presentation" id="SPx-4s-1fl"/>
+                                            <segue destination="DaE-aX-Ruw" kind="presentation" identifier="goToNewPostFromHome" id="SPx-4s-1fl"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -375,7 +375,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="QlG-vJ-7Uf" kind="show" id="AEx-n3-tI4"/>
+                                            <segue destination="QlG-vJ-7Uf" kind="show" identifier="goToVoteFromHome" id="AEx-n3-tI4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKn-KP-YFa">
@@ -389,7 +389,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="7QQ-Xn-g7O" kind="show" id="iok-rA-dp1"/>
+                                            <segue destination="7QQ-Xn-g7O" kind="show" identifier="goToRoastFromHome" id="iok-rA-dp1"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -464,7 +464,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zJJ-ww-niJ" kind="show" id="i8H-oP-C3G"/>
+                                    <action selector="postButtonTapped:" destination="7QQ-Xn-g7O" eventType="touchUpInside" id="CcW-hf-UE6"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="NCF-Zf-D33">
@@ -502,6 +502,7 @@
                     </view>
                     <connections>
                         <outlet property="PostBox" destination="K0W-Ok-uae" id="tFE-sw-bdY"/>
+                        <segue destination="zJJ-ww-niJ" kind="show" identifier="goToAllRoastsFromRoast" id="DuT-cS-dLk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6de-mC-1qo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -586,7 +587,7 @@
                                         <rect key="frame" x="20" y="31.5" width="24" height="24"/>
                                         <state key="normal" image="backicon"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="T0I-gN-qgQ"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="goToHomeFromAllRoasts" id="T0I-gN-qgQ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -713,7 +714,7 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <segue destination="zJJ-ww-niJ" kind="show" id="mXP-Yn-bp5"/>
+                                            <action selector="roastOneTapped:" destination="QlG-vJ-7Uf" eventType="touchUpInside" id="K6d-oL-QLL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Dd-Pz-Y0d">
@@ -724,7 +725,7 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <segue destination="zJJ-ww-niJ" kind="show" id="GHA-Xe-WrN"/>
+                                            <action selector="roastTwoTapped:" destination="QlG-vJ-7Uf" eventType="touchUpInside" id="SQ6-gn-z0F"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpO-Py-P4G">
@@ -735,7 +736,7 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <segue destination="zJJ-ww-niJ" kind="show" id="4ap-YN-fZk"/>
+                                            <action selector="roastThreeTapped:" destination="QlG-vJ-7Uf" eventType="touchUpInside" id="ba2-TV-Ich"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQg-Hp-g1S">
@@ -746,7 +747,7 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <segue destination="zJJ-ww-niJ" kind="show" id="Jf9-8X-2Bd"/>
+                                            <action selector="roastFourTapped:" destination="QlG-vJ-7Uf" eventType="touchUpInside" id="IMH-tb-4uN"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -786,6 +787,7 @@
                         <outlet property="Roast2" destination="9Dd-Pz-Y0d" id="jho-qv-lq6"/>
                         <outlet property="Roast3" destination="vpO-Py-P4G" id="5qc-us-r7x"/>
                         <outlet property="Roast4" destination="YQg-Hp-g1S" id="E2M-qa-QuS"/>
+                        <segue destination="zJJ-ww-niJ" kind="show" identifier="goToAllRoastsFromVote" id="Q7r-AT-tJs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pax-w4-TFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -806,7 +808,7 @@
         <image name="backicon" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="i8H-oP-C3G"/>
-        <segue reference="T0I-gN-qgQ"/>
+        <segue reference="DuT-cS-dLk"/>
+        <segue reference="AuB-yH-HK2"/>
     </inferredMetricsTieBreakers>
 </document>
