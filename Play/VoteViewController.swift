@@ -15,42 +15,6 @@ class VoteViewController: UIViewController {
     @IBOutlet var Roast2: UIView!
     @IBOutlet var Roast3: UIView!
     @IBOutlet var Roast4: UIView!
-    @IBOutlet var Roast5: UIView!
-    
-    /*
-    var interactor:Interactor? = nil
-    @IBAction func handleGesture(_ sender: UIPanGestureRecognizer) {
-        let percentThreshold:CGFloat = 0.6
-        
-        // convert y-position to downward pull progress (percentage)
-        let translation = sender.translation(in: view)
-        let verticalMovement = translation.y / view.bounds.height
-        let downwardMovement = fmaxf(Float(verticalMovement), 0.0)
-        let downwardMovementPercent = fminf(downwardMovement, 1.0)
-        let progress = CGFloat(downwardMovementPercent)
-        
-        guard let interactor = interactor else { return }
-        
-        switch sender.state {
-        case .began:
-            interactor.hasStarted = true
-            dismiss(animated: true, completion: nil)
-        case .changed:
-            interactor.shouldFinish = progress > percentThreshold
-            interactor.update(progress)
-        case .cancelled:
-            interactor.hasStarted = false
-            interactor.cancel()
-        case .ended:
-            interactor.hasStarted = false
-            interactor.shouldFinish
-                ? interactor.finish()
-                : interactor.cancel()
-        default:
-            break
-        }
-    } // end of HandleGesture
-    */
     
     // define a variable to store initial touch position
     var initialTouchPoint: CGPoint = CGPoint(x: 0,y: 0)
@@ -81,6 +45,7 @@ class VoteViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        // Make buttons rounded
         Roast1.layer.cornerRadius = 15.0
         Roast1.clipsToBounds = true
         Roast2.layer.cornerRadius = 15.0
@@ -89,13 +54,6 @@ class VoteViewController: UIViewController {
         Roast3.clipsToBounds = true
         Roast4.layer.cornerRadius = 15.0
         Roast4.clipsToBounds = true
-        Roast5.layer.cornerRadius = 15.0
-        Roast5.clipsToBounds = true
-        
-        
-        // self.layer.borderWidth = 10
-        // self.layer.borderColor = UIColor.white.cgColor
-
         
     }
 

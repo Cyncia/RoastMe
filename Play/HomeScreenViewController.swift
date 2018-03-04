@@ -20,9 +20,22 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        getNextPost { (postId) in
-            self.history.append(postId)
-            self.curr += 1
+        if curr == -1 {
+            getNextPost { (postId) in
+                self.history.append(postId)
+                self.curr += 1
+                getPicURL(postId: postId, completion: { (url) in
+                    do {
+                        let imgData = try Data(contentsOf: url)
+                        self.imageView.image = UIImage(data: imgData)
+                    } catch {
+                        print("Could not download image from URL.")
+                    }
+                })
+            }
+        }
+        else {
+            let postId = history[curr]
             getPicURL(postId: postId, completion: { (url) in
                 do {
                     let imgData = try Data(contentsOf: url)
