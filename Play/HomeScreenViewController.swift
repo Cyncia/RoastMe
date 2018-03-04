@@ -27,8 +27,6 @@ class ViewController: UIViewController {
                 }
             })
         }
-        
-        
         // Do any additional setup after loading the view, typically from a nib.
         
     }
@@ -41,12 +39,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    @IBAction func swipeLeft(_ sender: UISwipeGestureRecognizer) {
-        print("swipe detected")
-        if sender.state == .ended && sender.direction == UISwipeGestureRecognizerDirection.left {
-            print("swipe left occurred")
+
+    @IBAction func leftSwipe(_ sender: UISwipeGestureRecognizer) {
+        getNextPost { (postId) in
+            getPicURL(postId: postId, completion: { (url) in
+                do {
+                    let imgData = try Data(contentsOf: url)
+                    self.imageView.image = UIImage(data: imgData)
+                } catch {
+                    print("Could not download image from URL.")
+                }
+            })
         }
     }
     
