@@ -260,6 +260,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="vr8-Oy-2xx" appends="YES" id="eUT-dz-3DI"/>
+                                    <outletCollection property="gestureRecognizers" destination="ylD-Fu-213" appends="YES" id="Io6-8b-0lW"/>
                                 </connections>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUx-Vw-ICN">
@@ -393,6 +394,11 @@
                 <swipeGestureRecognizer direction="left" id="vr8-Oy-2xx">
                     <connections>
                         <action selector="leftSwipe:" destination="BYZ-38-t0r" id="6vc-8v-C1i"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="ylD-Fu-213">
+                    <connections>
+                        <action selector="rightSwipe:" destination="BYZ-38-t0r" id="jOp-9g-PC7"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
