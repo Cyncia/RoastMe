@@ -51,7 +51,7 @@ class NewPostViewController: UIViewController {
                 let range = start..<end
                 url = url[range]
 
-                createPost(userId: "-L6SlBZmg6omSQld4E4_", picURL: url)
+                createPost(picURL: url)
             }
         })
         //Update progress bar
