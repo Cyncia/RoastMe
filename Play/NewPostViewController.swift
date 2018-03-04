@@ -60,6 +60,10 @@ class NewPostViewController: UIViewController {
             guard let progress = snapshot.progress else { return }
             strongSelf.progressView.progress = Float(progress.fractionCompleted)
         }
+        
+        uploadTask.observe(.success) { snapshot in
+            self.performSegue(withIdentifier: "goToHomeFromNewPost", sender: self)
+        }
     }
     
     /*
