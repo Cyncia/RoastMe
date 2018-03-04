@@ -7,6 +7,7 @@
 //
 import Foundation
 import Firebase
+import FirebaseAuth
 
 let rootRef = Database.database().reference()
 let usersRef = rootRef.child("User")
@@ -14,28 +15,36 @@ let postsRef = rootRef.child("Post")
 let roastsRef = rootRef.child("Roast")
 
 func helper() {
-
+    
 }
 
 /*********************************************
  ROASTS
  ********************************************/
-func createRoast(postId: String, userId: String, text: String) -> String {
-    //update roast table
-    let roastId = roastsRef.childByAutoId().key
-    let roast = ["userId": userId,
-                 "postId": postId,
-                 "voteCount": 0,
-                 "text": text] as [String: Any]
-    let updates = [roastId: roast]
-    roastsRef.updateChildValues(updates)
+func createRoast(postId: String, text: String) -> String {
+    var roastId: String = ""
     
-    //update post table
-    postsRef.child(postId).child("roasts").child(roastId).setValue(roastId)
-    
-    //update user table
-    usersRef.child(userId).child("roasts").child(roastId).setValue(roastId)
-    
+    if let user = Auth.auth().currentUser {
+        let userId = user.uid
+        //update roast table
+        roastId = roastsRef.childByAutoId().key
+        let roast = ["userId": userId,
+                     "postId": postId,
+                     "voteCount": 0,
+                     "text": text] as [String: Any]
+        let updates = [roastId: roast]
+        roastsRef.updateChildValues(updates)
+        
+        //update post table
+        postsRef.child(postId).child("roasts").child(roastId).setValue(text)
+        
+        //update user table
+        usersRef.child(userId).child("roasts").child(roastId).setValue(text)
+    }
+    else {
+        //error
+        print("User not logged in.")
+    }
     return roastId
 }
 
@@ -111,16 +120,22 @@ func getUserFromRoast(roastId: String, completion: @escaping (String) -> ()) {
 /**********************************************
  POSTS
  *********************************************/
-func createPost(userId: String, picURL: String) -> String {
-    //update Post table
-    let postId = postsRef.childByAutoId().key
-    let post = ["userId": userId,
-                "picURL": picURL]
-    let updates = [postId: post]
-    postsRef.updateChildValues(updates)
+func createPost(picURL: String) -> String {
+    var postId: String = ""
     
-    //update User table
-    usersRef.child(userId).child("posts").child(postId).setValue(picURL)
+    if let user = Auth.auth().currentUser {
+        let userId = user.uid
+    
+        //update Post table
+        postId = postsRef.childByAutoId().key
+        let post = ["userId": userId,
+                    "picURL": picURL]
+        let updates = [postId: post]
+        postsRef.updateChildValues(updates)
+        
+        //update User table
+        usersRef.child(userId).child("posts").child(postId).setValue(picURL)
+    }
     
     return postId
 }
@@ -218,32 +233,38 @@ func getUserInfo(userId: String, completion: @escaping (Bool, String, String) ->
     }
 }
 
-func getYourRoasts(userId: String, completion: @escaping ([String]) -> ()) {
-    usersRef.child(userId).observeSingleEvent(of: .value, with: { (snapshot) in
-        let value = snapshot.value as? NSDictionary
-        let roastsDict = value?["roasts"] as? NSDictionary ?? NSDictionary()
-        
-        let roasts = roastsDict.allKeys as? [String] ?? [String]()
-        
-        completion(roasts)
-        
-    }) { (error) in
-        completion([String]())
-        print(error.localizedDescription)
+func getYourRoasts(completion: @escaping ([String]) -> ()) {
+    if let user = Auth.auth().currentUser {
+        let userId = user.uid
+        usersRef.child(userId).observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            let roastsDict = value?["roasts"] as? NSDictionary ?? NSDictionary()
+            
+            let roasts = roastsDict.allKeys as? [String] ?? [String]()
+            
+            completion(roasts)
+            
+        }) { (error) in
+            completion([String]())
+            print(error.localizedDescription)
+        }
     }
 }
 
-func getYourPosts(userId: String, completion: @escaping ([String]) -> ()) {
-    usersRef.child(userId).observeSingleEvent(of: .value, with: { (snapshot) in
-        let value = snapshot.value as? NSDictionary
-        let postsDict = value?["posts"] as? NSDictionary ?? NSDictionary()
-        
-        let posts = postsDict.allKeys as? [String] ?? [String]()
-        
-        completion(posts)
-        
-    }) { (error) in
-        completion([String]())
-        print(error.localizedDescription)
+func getYourPosts(completion: @escaping ([String]) -> ()) {
+    if let user = Auth.auth().currentUser {
+        let userId = user.uid
+        usersRef.child(userId).observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            let postsDict = value?["posts"] as? NSDictionary ?? NSDictionary()
+            
+            let posts = postsDict.allKeys as? [String] ?? [String]()
+            
+            completion(posts)
+            
+        }) { (error) in
+            completion([String]())
+            print(error.localizedDescription)
+        }
     }
 }
