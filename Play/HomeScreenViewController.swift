@@ -14,10 +14,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     let interactor = Interactor()
+    
+    var history = [String]()
+    var curr = -1
 
     override func viewDidLoad() {
         super.viewDidLoad()
         getNextPost { (postId) in
+            self.history.append(postId)
+            self.curr += 1
             getPicURL(postId: postId, completion: { (url) in
                 do {
                     let imgData = try Data(contentsOf: url)
@@ -41,7 +46,39 @@ class ViewController: UIViewController {
     }
 
     @IBAction func leftSwipe(_ sender: UISwipeGestureRecognizer) {
-        getNextPost { (postId) in
+        print("left swipe detected")
+        if(curr + 1 == history.count) {
+            getNextPost { (postId) in
+                self.history.append(postId)
+                self.curr += 1
+                getPicURL(postId: postId, completion: { (url) in
+                    do {
+                        let imgData = try Data(contentsOf: url)
+                        self.imageView.image = UIImage(data: imgData)
+                    } catch {
+                        print("Could not download image from URL.")
+                    }
+                })
+            }
+        }
+        else {
+            curr += 1
+            let postId = history[curr]
+            getPicURL(postId: postId, completion: { (url) in
+                do {
+                    let imgData = try Data(contentsOf: url)
+                    self.imageView.image = UIImage(data: imgData)
+                } catch {
+                    print("Could not download image from URL.")
+                }
+            })
+        }
+    }
+    @IBAction func rightSwipe(_ sender: UISwipeGestureRecognizer) {
+        print("right swipe detected")
+        curr -= 1
+        if(curr>=0) {
+            let postId = history[curr]
             getPicURL(postId: postId, completion: { (url) in
                 do {
                     let imgData = try Data(contentsOf: url)
