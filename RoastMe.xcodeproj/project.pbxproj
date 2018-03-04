@@ -10,25 +10,27 @@
 		6BEC3A3DF0B735D8F12E1E2D /* Pods_RoastMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48EB932AF426E7DD80D979A /* Pods_RoastMeTests.framework */; };
 		9DB9773251DE633B2B7E00D8 /* Pods_RoastMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C163035949ADAF8573D93E /* Pods_RoastMe.framework */; };
 		9F12D8142046323F00050740 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F12D8132046323F00050740 /* GoogleService-Info.plist */; };
-		9F13A1BA204A638B00D19E4C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F13A1B9204A638B00D19E4C /* LoginViewController.swift */; };
 		9F13A1BC204A64B600D19E4C /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F13A1BB204A64B600D19E4C /* NewPostViewController.swift */; };
 		9F3F9F04203E719800B47AEE /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3F9F03203E719800B47AEE /* api.swift */; };
 		9F97C0FC12B1D7872F0C0557 /* Pods_RoastMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BDFD2981F331EB425513AA /* Pods_RoastMeUITests.framework */; };
 		DC2562CD202931D8006E4438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562CC202931D8006E4438 /* AppDelegate.swift */; };
 		DC2562CF202931D8006E4438 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562CE202931D8006E4438 /* HomeScreenViewController.swift */; };
 		DC2562D2202931D8006E4438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2562D0202931D8006E4438 /* Main.storyboard */; };
-		DC2562D4202931D8006E4438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2562D3202931D8006E4438 /* Assets.xcassets */; };
 		DC2562D7202931D8006E4438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2562D5202931D8006E4438 /* LaunchScreen.storyboard */; };
 		DC2562E2202931D8006E4438 /* PlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562E1202931D8006E4438 /* PlayTests.swift */; };
 		DC2562ED202931D8006E4438 /* PlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562EC202931D8006E4438 /* PlayUITests.swift */; };
+		DC34D953204BFD160005FCEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC34D952204BFD160005FCEC /* Assets.xcassets */; };
 		DC86DCE0202A69A3004D974E /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86DCDF202A69A3004D974E /* VoteViewController.swift */; };
 		DC86DCE2202A69B9004D974E /* RoastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86DCE1202A69B9004D974E /* RoastViewController.swift */; };
-		DC8CC739203E6CC4001FCBD9 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8CC738203E6CC4001FCBD9 /* LeaderboardViewController.swift */; };
 		DC8CC73B203E82AF001FCBD9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8CC73A203E82AF001FCBD9 /* ProfileViewController.swift */; };
 		DCCB273320476BDB00DB289B /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB273220476BDB00DB289B /* CustomSegue.swift */; };
 		DCCB27352047779B00DB289B /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB27342047779B00DB289B /* DismissAnimator.swift */; };
 		DCCB273720477D3F00DB289B /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB273620477D3F00DB289B /* Interactor.swift */; };
 		DCCB2739204790B300DB289B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB2738204790B300DB289B /* TableViewController.swift */; };
+		DCD7DC93204BA25700AA3B4D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD7DC92204BA25700AA3B4D /* LoginViewController.swift */; };
+		DCD7DC96204BB64E00AA3B4D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD7DC94204BB64E00AA3B4D /* TableViewCell.swift */; };
+		DCD7DC9B204BBB1400AA3B4D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD7DC9A204BBB1400AA3B4D /* User.swift */; };
+		DCD7DC9D204BC33000AA3B4D /* AllRoastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD7DC9C204BC33000AA3B4D /* AllRoastsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +57,6 @@
 		493B82479A88ADE51E8A8BD8 /* Pods-RoastMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMeUITests/Pods-RoastMeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7CB09C91D724BE3E1CEF69EB /* Pods-RoastMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMe/Pods-RoastMe.release.xcconfig"; sourceTree = "<group>"; };
 		9F12D8132046323F00050740 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9F13A1B9204A638B00D19E4C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "/Users/alexanderchen/Documents/IOS Projects/RoastMe/Play/LoginViewController.swift"; sourceTree = "<absolute>"; };
 		9F13A1BB204A64B600D19E4C /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		9F3F9F03203E719800B47AEE /* api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
 		A48EB932AF426E7DD80D979A /* Pods_RoastMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoastMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +65,6 @@
 		DC2562CC202931D8006E4438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC2562CE202931D8006E4438 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		DC2562D1202931D8006E4438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DC2562D3202931D8006E4438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC2562D6202931D8006E4438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC2562D8202931D8006E4438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC2562DD202931D8006E4438 /* RoastMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoastMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,14 +73,18 @@
 		DC2562E8202931D8006E4438 /* RoastMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoastMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2562EC202931D8006E4438 /* PlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayUITests.swift; sourceTree = "<group>"; };
 		DC2562EE202931D8006E4438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC34D952204BFD160005FCEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC86DCDF202A69A3004D974E /* VoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteViewController.swift; sourceTree = "<group>"; };
 		DC86DCE1202A69B9004D974E /* RoastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoastViewController.swift; sourceTree = "<group>"; };
-		DC8CC738203E6CC4001FCBD9 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		DC8CC73A203E82AF001FCBD9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DCCB273220476BDB00DB289B /* CustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
 		DCCB27342047779B00DB289B /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
 		DCCB273620477D3F00DB289B /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		DCCB2738204790B300DB289B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		DCD7DC92204BA25700AA3B4D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DCD7DC94204BB64E00AA3B4D /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		DCD7DC9A204BBB1400AA3B4D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DCD7DC9C204BC33000AA3B4D /* AllRoastsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllRoastsViewController.swift; sourceTree = "<group>"; };
 		F1A79966F085F65E72E3C171 /* Pods-RoastMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMe/Pods-RoastMe.debug.xcconfig"; sourceTree = "<group>"; };
 		F3E67AAD54A77DF3C3200564 /* Pods-RoastMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMeTests/Pods-RoastMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,21 +165,15 @@
 		DC2562CB202931D8006E4438 /* Play */ = {
 			isa = PBXGroup;
 			children = (
-				9F13A1B9204A638B00D19E4C /* LoginViewController.swift */,
+				DCD7DC92204BA25700AA3B4D /* LoginViewController.swift */,
 				DC2562CC202931D8006E4438 /* AppDelegate.swift */,
 				9F3F9F03203E719800B47AEE /* api.swift */,
-				DC2562CE202931D8006E4438 /* HomeScreenViewController.swift */,
-				DC8CC73A203E82AF001FCBD9 /* ProfileViewController.swift */,
-				DC86DCDF202A69A3004D974E /* VoteViewController.swift */,
-				DC86DCE1202A69B9004D974E /* RoastViewController.swift */,
-				DC8CC738203E6CC4001FCBD9 /* LeaderboardViewController.swift */,
+				DCD7DC99204BBA1B00AA3B4D /* Screens */,
 				DC2562D0202931D8006E4438 /* Main.storyboard */,
+				DC34D952204BFD160005FCEC /* Assets.xcassets */,
+				DCD7DC9A204BBB1400AA3B4D /* User.swift */,
 				9F13A1BB204A64B600D19E4C /* NewPostViewController.swift */,
-				DCCB2738204790B300DB289B /* TableViewController.swift */,
-				DCCB273620477D3F00DB289B /* Interactor.swift */,
-				DCCB27342047779B00DB289B /* DismissAnimator.swift */,
-				DCCB273220476BDB00DB289B /* CustomSegue.swift */,
-				DC2562D3202931D8006E4438 /* Assets.xcassets */,
+				DCD7DC98204BB9F300AA3B4D /* Transition/Other */,
 				DC2562D5202931D8006E4438 /* LaunchScreen.storyboard */,
 				DC2562D8202931D8006E4438 /* Info.plist */,
 				9F12D8132046323F00050740 /* GoogleService-Info.plist */,
@@ -199,6 +197,30 @@
 				DC2562EE202931D8006E4438 /* Info.plist */,
 			);
 			path = PlayUITests;
+			sourceTree = "<group>";
+		};
+		DCD7DC98204BB9F300AA3B4D /* Transition/Other */ = {
+			isa = PBXGroup;
+			children = (
+				DCCB273620477D3F00DB289B /* Interactor.swift */,
+				DCCB27342047779B00DB289B /* DismissAnimator.swift */,
+				DCCB273220476BDB00DB289B /* CustomSegue.swift */,
+				DCCB2738204790B300DB289B /* TableViewController.swift */,
+			);
+			name = Transition/Other;
+			sourceTree = "<group>";
+		};
+		DCD7DC99204BBA1B00AA3B4D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DC2562CE202931D8006E4438 /* HomeScreenViewController.swift */,
+				DC8CC73A203E82AF001FCBD9 /* ProfileViewController.swift */,
+				DC86DCDF202A69A3004D974E /* VoteViewController.swift */,
+				DC86DCE1202A69B9004D974E /* RoastViewController.swift */,
+				DCD7DC9C204BC33000AA3B4D /* AllRoastsViewController.swift */,
+				DCD7DC94204BB64E00AA3B4D /* TableViewCell.swift */,
+			);
+			name = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,7 +341,7 @@
 			files = (
 				DC2562D7202931D8006E4438 /* LaunchScreen.storyboard in Resources */,
 				9F12D8142046323F00050740 /* GoogleService-Info.plist in Resources */,
-				DC2562D4202931D8006E4438 /* Assets.xcassets in Resources */,
+				DC34D953204BFD160005FCEC /* Assets.xcassets in Resources */,
 				DC2562D2202931D8006E4438 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,18 +540,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F13A1BA204A638B00D19E4C /* LoginViewController.swift in Sources */,
+				DCD7DC96204BB64E00AA3B4D /* TableViewCell.swift in Sources */,
 				9F13A1BC204A64B600D19E4C /* NewPostViewController.swift in Sources */,
 				9F3F9F04203E719800B47AEE /* api.swift in Sources */,
 				DC8CC73B203E82AF001FCBD9 /* ProfileViewController.swift in Sources */,
 				DC86DCE2202A69B9004D974E /* RoastViewController.swift in Sources */,
 				DC86DCE0202A69A3004D974E /* VoteViewController.swift in Sources */,
+				DCD7DC9B204BBB1400AA3B4D /* User.swift in Sources */,
 				DCCB2739204790B300DB289B /* TableViewController.swift in Sources */,
 				DCCB273720477D3F00DB289B /* Interactor.swift in Sources */,
 				DC2562CF202931D8006E4438 /* HomeScreenViewController.swift in Sources */,
 				DCCB273320476BDB00DB289B /* CustomSegue.swift in Sources */,
-				DC8CC739203E6CC4001FCBD9 /* LeaderboardViewController.swift in Sources */,
 				DC2562CD202931D8006E4438 /* AppDelegate.swift in Sources */,
+				DCD7DC93204BA25700AA3B4D /* LoginViewController.swift in Sources */,
+				DCD7DC9D204BC33000AA3B4D /* AllRoastsViewController.swift in Sources */,
 				DCCB27352047779B00DB289B /* DismissAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
