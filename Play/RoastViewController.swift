@@ -88,11 +88,12 @@ class RoastViewController: UIViewController {
 
     
     @IBAction func postButtonTapped(_ sender: UIButton) {
+        createRoast(postId: history[curr], text: PostBox.text)
         performSegue(withIdentifier: "goToAllRoastsFromRoast", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToAllRoastsFromVote" {
+        if segue.identifier == "goToAllRoastsFromRoast" {
             if let destination = segue.destination as? AllRoastsViewController {
                 destination.history = history
                 destination.curr = curr
