@@ -10,6 +10,7 @@ pod 'Firebase'
 pod 'Firebase/Database'
 pod 'Firebase/Core'
 pod 'Firebase/Storage'
+pod 'Firebase/Auth'
 
   target 'RoastMeTests' do
     inherit! :search_paths
