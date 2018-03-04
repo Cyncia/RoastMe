@@ -208,30 +208,32 @@ func getUserFromPost(postId: String, completion: @escaping (String) -> ()) {
 /*********************************************
  USERS
  ********************************************/
-func createUser(email: String, password: String) -> String {
-    let userId = usersRef.childByAutoId().key
-    let user = ["email": email,
-                "password": password]
-    let updates = [userId: user]
-    usersRef.updateChildValues(updates)
-    
-    return userId
-}
 
-func getUserInfo(userId: String, completion: @escaping (Bool, String, String) -> ()) {
-    usersRef.child(userId).observeSingleEvent(of: .value, with: { (snapshot) in
-        let value = snapshot.value as? NSDictionary
-        
-        let email = value?["email"] as! String
-        let password = value?["password"] as! String
-
-        completion(false, email, password)
-        
-    }) { (error) in
-        completion(true, "", "")
-        print(error.localizedDescription)
-    }
-}
+// The following 2 functions are deprecated since the addition of firebase auth. Code archived here for reference.
+//func createUser(email: String, password: String) -> String {
+//    let userId = usersRef.childByAutoId().key
+//    let user = ["email": email,
+//                "password": password]
+//    let updates = [userId: user]
+//    usersRef.updateChildValues(updates)
+//
+//    return userId
+//}
+//
+//func getUserInfo(userId: String, completion: @escaping (Bool, String, String) -> ()) {
+//    usersRef.child(userId).observeSingleEvent(of: .value, with: { (snapshot) in
+//        let value = snapshot.value as? NSDictionary
+//
+//        let email = value?["email"] as! String
+//        let password = value?["password"] as! String
+//
+//        completion(false, email, password)
+//
+//    }) { (error) in
+//        completion(true, "", "")
+//        print(error.localizedDescription)
+//    }
+//}
 
 func getYourRoasts(completion: @escaping ([String]) -> ()) {
     if let user = Auth.auth().currentUser {
