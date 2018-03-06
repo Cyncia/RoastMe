@@ -34,6 +34,9 @@ class AllRoastsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        Chart.estimatedRowHeight = 100
+        Chart.rowHeight = UITableViewAutomaticDimension
+        
         Chart.delegate = self
         Chart.dataSource = self
     }
@@ -72,9 +75,9 @@ extension AllRoastsViewController: UITableViewDataSource, UITableViewDelegate {
         return roastTexts.count
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
-    }
+   // func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    //    return 90
+    //}
     
     /*
     // Change Selection Color
@@ -111,7 +114,7 @@ extension AllRoastsViewController: UITableViewDataSource, UITableViewDelegate {
 
         return roastCell
     }
-    
+
 }
 
 

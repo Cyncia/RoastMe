@@ -1,43 +1,36 @@
 //
-//  ProfileViewController.swift
+//  ParentVCViewController.swift
 //  RoastMe
 //
-//  Created by Cynthia Zhou on 2/21/18.
+//  Created by Cynthia Zhou on 3/5/18.
 //  Copyright © 2018 Cynthia Zhou. All rights reserved.
 //
 
 import UIKit
-// import SwipeMenuViewController
 
-class ProfileViewController: UIViewController {
-
+class ParentVCViewController: UIViewController {
+    
     var history = [String]()
     var curr = -1
-    
+
+    @IBOutlet var BkgdPic: UIImageView!
     @IBOutlet var ProfilePic: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
-        ProfilePic.layer.cornerRadius = ProfilePic.frame.size.height / 2
+        ProfilePic.layer.borderWidth = 2
+        ProfilePic.layer.masksToBounds = false
+        ProfilePic.layer.borderColor = UIColor.white.cgColor
+        ProfilePic.layer.cornerRadius = ProfilePic.frame.height/2
         ProfilePic.clipsToBounds = true
-/*
-        swipeMenuView.dataSource = self
-        swipeMenuView.delegate = self
         
-        let options: SwipeMenuViewOptions = .init()
         
-        swipeMenuView.reloadData(options: options)
- */
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToHomeFromProfile" {

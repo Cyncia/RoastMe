@@ -20,9 +20,13 @@
 		DC2562E2202931D8006E4438 /* PlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562E1202931D8006E4438 /* PlayTests.swift */; };
 		DC2562ED202931D8006E4438 /* PlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562EC202931D8006E4438 /* PlayUITests.swift */; };
 		DC34D953204BFD160005FCEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC34D952204BFD160005FCEC /* Assets.xcassets */; };
+		DC6090BD204D0EB300A84D83 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6090BC204D0EB300A84D83 /* CustomViewController.swift */; };
 		DC86DCE0202A69A3004D974E /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86DCDF202A69A3004D974E /* VoteViewController.swift */; };
 		DC86DCE2202A69B9004D974E /* RoastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86DCE1202A69B9004D974E /* RoastViewController.swift */; };
 		DC8CC73B203E82AF001FCBD9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8CC73A203E82AF001FCBD9 /* ProfileViewController.swift */; };
+		DCAF02E0204D53CA0031CC19 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF02DF204D53CA0031CC19 /* ContentViewController.swift */; };
+		DCAF02E4204D6B040031CC19 /* ParentVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF02E3204D6B040031CC19 /* ParentVCViewController.swift */; };
+		DCAF02E6204D6C4D0031CC19 /* EmptyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF02E5204D6C4D0031CC19 /* EmptyVC.swift */; };
 		DCCB273320476BDB00DB289B /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB273220476BDB00DB289B /* CustomSegue.swift */; };
 		DCCB27352047779B00DB289B /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB27342047779B00DB289B /* DismissAnimator.swift */; };
 		DCCB273720477D3F00DB289B /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB273620477D3F00DB289B /* Interactor.swift */; };
@@ -74,9 +78,13 @@
 		DC2562EC202931D8006E4438 /* PlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayUITests.swift; sourceTree = "<group>"; };
 		DC2562EE202931D8006E4438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC34D952204BFD160005FCEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC6090BC204D0EB300A84D83 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		DC86DCDF202A69A3004D974E /* VoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteViewController.swift; sourceTree = "<group>"; };
 		DC86DCE1202A69B9004D974E /* RoastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoastViewController.swift; sourceTree = "<group>"; };
 		DC8CC73A203E82AF001FCBD9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DCAF02DF204D53CA0031CC19 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		DCAF02E3204D6B040031CC19 /* ParentVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentVCViewController.swift; sourceTree = "<group>"; };
+		DCAF02E5204D6C4D0031CC19 /* EmptyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyVC.swift; sourceTree = "<group>"; };
 		DCCB273220476BDB00DB289B /* CustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
 		DCCB27342047779B00DB289B /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
 		DCCB273620477D3F00DB289B /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
@@ -170,11 +178,11 @@
 				DCD7DC99204BBA1B00AA3B4D /* Screens */,
 				DC2562D0202931D8006E4438 /* Main.storyboard */,
 				DC34D952204BFD160005FCEC /* Assets.xcassets */,
-				DCD7DC9A204BBB1400AA3B4D /* User.swift */,
 				DCD7DC98204BB9F300AA3B4D /* Transition/Other */,
 				DC2562D5202931D8006E4438 /* LaunchScreen.storyboard */,
 				DC2562D8202931D8006E4438 /* Info.plist */,
 				9F12D8132046323F00050740 /* GoogleService-Info.plist */,
+				DC6090C2204D1B0E00A84D83 /* SwipeMenu */,
 			);
 			path = Play;
 			sourceTree = "<group>";
@@ -197,9 +205,21 @@
 			path = PlayUITests;
 			sourceTree = "<group>";
 		};
+		DC6090C2204D1B0E00A84D83 /* SwipeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DCAF02DF204D53CA0031CC19 /* ContentViewController.swift */,
+				DC6090BC204D0EB300A84D83 /* CustomViewController.swift */,
+				DCAF02E3204D6B040031CC19 /* ParentVCViewController.swift */,
+				DCAF02E5204D6C4D0031CC19 /* EmptyVC.swift */,
+			);
+			name = SwipeMenu;
+			sourceTree = "<group>";
+		};
 		DCD7DC98204BB9F300AA3B4D /* Transition/Other */ = {
 			isa = PBXGroup;
 			children = (
+				DCD7DC9A204BBB1400AA3B4D /* User.swift */,
 				DCCB273620477D3F00DB289B /* Interactor.swift */,
 				DCCB27342047779B00DB289B /* DismissAnimator.swift */,
 				DCCB273220476BDB00DB289B /* CustomSegue.swift */,
@@ -295,7 +315,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Cynthia Zhou";
 				TargetAttributes = {
 					DC2562C8202931D8006E4438 = {
@@ -503,6 +523,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-RoastMe/Pods-RoastMe-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeMenuViewController/SwipeMenuViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -510,6 +531,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeMenuViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -540,6 +562,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCAF02E6204D6C4D0031CC19 /* EmptyVC.swift in Sources */,
 				DCD7DC96204BB64E00AA3B4D /* TableViewCell.swift in Sources */,
 				9F13A1BC204A64B600D19E4C /* NewPostViewController.swift in Sources */,
 				9F3F9F04203E719800B47AEE /* api.swift in Sources */,
@@ -548,6 +571,9 @@
 				DC86DCE0202A69A3004D974E /* VoteViewController.swift in Sources */,
 				DCD7DC9B204BBB1400AA3B4D /* User.swift in Sources */,
 				DCCB2739204790B300DB289B /* TableViewController.swift in Sources */,
+				DCAF02E4204D6B040031CC19 /* ParentVCViewController.swift in Sources */,
+				DC6090BD204D0EB300A84D83 /* CustomViewController.swift in Sources */,
+				DCAF02E0204D53CA0031CC19 /* ContentViewController.swift in Sources */,
 				DCCB273720477D3F00DB289B /* Interactor.swift in Sources */,
 				DC2562CF202931D8006E4438 /* HomeScreenViewController.swift in Sources */,
 				DCCB273320476BDB00DB289B /* CustomSegue.swift in Sources */,
@@ -618,7 +644,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -626,7 +654,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -655,6 +687,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -668,7 +701,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -676,7 +711,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -697,6 +736,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -711,7 +751,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hacksprint.Play;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -724,7 +764,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hacksprint.Play;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
