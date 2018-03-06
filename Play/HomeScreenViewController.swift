@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if curr == -1 {
-            getNextPost { (postId) in
+            getNextPost(last: "") { (postId) in
                 self.history.append(postId)
                 self.curr += 1
                 getPicURL(postId: postId, completion: { (url) in
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
     @IBAction func leftSwipe(_ sender: UISwipeGestureRecognizer) {
         print("left swipe detected")
         if(curr + 1 == history.count) {
-            getNextPost { (postId) in
+            getNextPost(last: history[curr]) { (postId) in
                 self.history.append(postId)
                 self.curr += 1
                 getPicURL(postId: postId, completion: { (url) in

@@ -183,13 +183,19 @@ func getAllRoasts(postId: String, completion: @escaping ([String]) -> ()) {
     }
 }
 
-func getNextPost(completion: @escaping (String) -> ()) {
+func getNextPost(last: String, completion: @escaping (String) -> ()) {
     postsRef.observeSingleEvent(of: .value, with: { (snapshot) in
         let value = snapshot.value as? NSDictionary ?? NSDictionary()
         
         let posts = value.allKeys as? [String] ?? [String]()
         
-        completion(posts[Int(arc4random_uniform(UInt32(posts.count)))])
+        var nextPost: String
+        
+        repeat {
+            nextPost = posts[Int(arc4random_uniform(UInt32(posts.count)))]
+        } while nextPost == last
+        
+        completion(nextPost)
         
     }) { (error) in
         completion("")

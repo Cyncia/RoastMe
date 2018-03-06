@@ -12,16 +12,15 @@ class TableViewCell: UITableViewCell {
 
     // Properties
     @IBOutlet var ProfileIcon: UIImageView!
-    @IBOutlet var Name: UILabel!
     @IBOutlet var cellView: UIView!
     @IBOutlet var Roast: UITextView!
     
     
-    func setUser(person: User) {
+    func setText(roastText: String) {
         // person.image.layer.cornerRadius = person.image.frame.height / 2
-        ProfileIcon.image = person.image
-        Name.text = person.name
-        Roast.text = person.roast
+        //ProfileIcon.image = person.image
+        Roast.text = roastText
+        
     }
     
     

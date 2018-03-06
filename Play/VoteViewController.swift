@@ -96,7 +96,7 @@ class VoteViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    //TODO:: UPVOTE FAILS IF ROAST DOESNT EXIST
     @IBAction func roastOneTapped(_ sender: UIButton) {
         upvote(roastId: roastOneId)
         performSegue(withIdentifier: "goToAllRoastsFromVote", sender: self)
