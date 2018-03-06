@@ -18,8 +18,7 @@ class ViewController: UIViewController {
     var history = [String]()
     var curr = -1
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
         if curr == -1 {
             getNextPost(last: "") { (postId) in
                 self.history.append(postId)
@@ -45,6 +44,11 @@ class ViewController: UIViewController {
                 }
             })
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
         
     }
