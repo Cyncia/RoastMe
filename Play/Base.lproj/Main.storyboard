@@ -360,7 +360,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lm6-6I-99j">
                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="70"/>
-                                        <color key="backgroundColor" red="0.52445489168167114" green="0.82794678211212158" blue="0.98434221744537354" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.52156862745098043" green="0.82745098039215681" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="Yyc-v1-8F3"/>
                                         </constraints>
@@ -476,7 +476,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.77943665747549007" green="0.28235294117647058" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.7803921568627451" green="0.28235294117647058" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="K0W-Ok-uae" secondAttribute="trailing" constant="32" id="EHt-pM-D3B"/>
@@ -496,6 +496,7 @@
                     </view>
                     <connections>
                         <outlet property="PostBox" destination="K0W-Ok-uae" id="tFE-sw-bdY"/>
+                        <outlet property="imageView" destination="NCF-Zf-D33" id="8PG-it-X6J"/>
                         <segue destination="zJJ-ww-niJ" kind="show" identifier="goToAllRoastsFromRoast" id="DuT-cS-dLk"/>
                     </connections>
                 </viewController>
@@ -793,7 +794,7 @@
         <image name="profile" width="376" height="376"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Q7r-AT-tJs"/>
+        <segue reference="DuT-cS-dLk"/>
         <segue reference="lHW-ac-rc1"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -26,6 +26,7 @@ class RoastViewController: UIViewController {
     var curr = -1
     
     @IBOutlet var PostBox: UITextView!
+    @IBOutlet weak var imageView: UIImageView!
     
     // define a variable to store initial touch position
     var initialTouchPoint: CGPoint = CGPoint(x: 0,y: 0)
@@ -50,6 +51,16 @@ class RoastViewController: UIViewController {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        getPicURL(postId: history[curr], completion: { (url) in
+            do {
+                let imgData = try Data(contentsOf: url)
+                self.imageView.image = UIImage(data: imgData)
+            } catch {
+                print("Could not download image from URL.")
+            }
+        })
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
