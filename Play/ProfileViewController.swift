@@ -7,6 +7,7 @@
 //
 
 import UIKit
+// import SwipeMenuViewController
 
 class ProfileViewController: UIViewController {
 
@@ -15,7 +16,6 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet var ProfilePic: UIImageView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,7 +23,14 @@ class ProfileViewController: UIViewController {
         
         ProfilePic.layer.cornerRadius = ProfilePic.frame.size.height / 2
         ProfilePic.clipsToBounds = true
+/*
+        swipeMenuView.dataSource = self
+        swipeMenuView.delegate = self
         
+        let options: SwipeMenuViewOptions = .init()
+        
+        swipeMenuView.reloadData(options: options)
+ */
     }
 
     override func didReceiveMemoryWarning() {

@@ -55,7 +55,7 @@ class NewPostViewController: UIViewController {
                 let start = url.index(url.startIndex, offsetBy: 9)
                 let end = url.index(url.endIndex, offsetBy: -1)
                 let range = start..<end
-                url = url[range]
+                url = String(url[range])
                 
                 addURL(postId: postId, picURL: url)
             }
