@@ -18,10 +18,9 @@ class ViewController: UIViewController {
     var history = [String]()
     var curr = -1
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
         if curr == -1 {
-            getNextPost { (postId) in
+            getNextPost(last: "") { (postId) in
                 self.history.append(postId)
                 self.curr += 1
                 getPicURL(postId: postId, completion: { (url) in
@@ -45,6 +44,11 @@ class ViewController: UIViewController {
                 }
             })
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
         
     }
@@ -61,7 +65,7 @@ class ViewController: UIViewController {
     @IBAction func leftSwipe(_ sender: UISwipeGestureRecognizer) {
         print("left swipe detected")
         if(curr + 1 == history.count) {
-            getNextPost { (postId) in
+            getNextPost(last: history[curr]) { (postId) in
                 self.history.append(postId)
                 self.curr += 1
                 getPicURL(postId: postId, completion: { (url) in

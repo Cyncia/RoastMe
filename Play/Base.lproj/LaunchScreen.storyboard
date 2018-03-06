@@ -6,7 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -27,26 +27,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="xRw-JP-B1h">
-                                <rect key="frame" x="119" y="211" width="137" height="140"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RoastMe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgA-8W-ZbC">
-                                <rect key="frame" x="123" y="347" width="133" height="56"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3ej-B2-VFt">
+                                <rect key="frame" x="112.5" y="220.5" width="150" height="226"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="xRw-JP-B1h">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="184"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="0pW-te-c4Q"/>
+                                            <constraint firstAttribute="width" secondItem="xRw-JP-B1h" secondAttribute="height" multiplier="241:297" id="odf-WS-a6v"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RoastMe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgA-8W-ZbC">
+                                        <rect key="frame" x="0.0" y="184" width="150" height="42"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="AgA-8W-ZbC" firstAttribute="centerX" secondItem="3ej-B2-VFt" secondAttribute="centerX" id="PcP-tk-JKA"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.52156862745098043" green="0.82745098039215681" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="AgA-8W-ZbC" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="327" id="5nb-dc-xSu"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="AgA-8W-ZbC" secondAttribute="bottom" constant="264" id="8JW-K2-Ysh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="AgA-8W-ZbC" secondAttribute="trailing" constant="103" id="Ayb-uf-ymz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xRw-JP-B1h" secondAttribute="trailing" constant="103" id="BdY-Od-TXU"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="xRw-JP-B1h" secondAttribute="bottom" constant="316" id="aW6-NN-Rzu"/>
-                            <constraint firstItem="AgA-8W-ZbC" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="107" id="sFG-4M-9UJ"/>
-                            <constraint firstItem="xRw-JP-B1h" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="191" id="tBI-cU-r8L"/>
-                            <constraint firstItem="xRw-JP-B1h" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="103" id="z9F-lU-Cc8"/>
+                            <constraint firstItem="3ej-B2-VFt" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="AF2-S5-FZp"/>
+                            <constraint firstItem="3ej-B2-VFt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Olh-YS-gyS"/>
                         </constraints>
                     </view>
                 </viewController>
