@@ -9,6 +9,9 @@
 import UIKit
 
 class ParentVCViewController: UIViewController {
+    
+    var history = [String]()
+    var curr = -1
 
     @IBOutlet var BkgdPic: UIImageView!
     @IBOutlet var ProfilePic: UIImageView!
@@ -29,6 +32,14 @@ class ParentVCViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToHomeFromProfile" {
+            if let destination = segue.destination as? ViewController {
+                destination.history = history
+                destination.curr = curr
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation

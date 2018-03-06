@@ -122,7 +122,7 @@ class ViewController: UIViewController {
             }
         }
         else if segue.identifier == "goToProfileFromHome" {
-            if let destination = segue.destination as? ProfileViewController {
+            if let destination = segue.destination as? ParentVCViewController {
                 destination.history = history
                 destination.curr = curr
             }
