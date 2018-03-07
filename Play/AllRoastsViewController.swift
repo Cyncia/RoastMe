@@ -12,7 +12,7 @@ class AllRoastsViewController: UIViewController {
 
     var history = [String]()
     var curr = -1
-    var roastTexts = ["hello"]
+    var roastTexts = [String]()
     
     @IBOutlet var Chart: UITableView!
     
