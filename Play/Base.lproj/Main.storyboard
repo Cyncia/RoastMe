@@ -536,7 +536,7 @@
                         <viewControllerLayoutGuide type="top" id="k7Q-g8-gMS"/>
                         <viewControllerLayoutGuide type="bottom" id="d22-hi-ncH"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="FqW-yQ-b1m" customClass="UICollectionViewCell">
+                    <view key="view" contentMode="scaleToFill" id="FqW-yQ-b1m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
