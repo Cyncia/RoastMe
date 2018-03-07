@@ -40,6 +40,8 @@ class NewPostViewController: UIViewController {
     func uploadImageToFirebaseStorage(data: Data) {
         
         let postId = createPost()
+        curr += 1
+        history.append(postId)
         
         let roastsRef = Storage.storage().reference().child("roasts/\(postId).jpg")
         let uploadMetadata = StorageMetadata()
