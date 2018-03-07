@@ -13,6 +13,7 @@ class AllRoastsViewController: UIViewController {
     var history = [String]()
     var curr = -1
     var roastTexts = ["hello"]
+    var count_list = [50]
     
     @IBOutlet var Chart: UITableView!
     
@@ -25,6 +26,7 @@ class AllRoastsViewController: UIViewController {
             for roast in roasts {
                 getRoastText(roastId: roast, completion: { (roastText) in
                     self.roastTexts.append(roastText)
+                    self.count_list.append(50)
                     self.Chart.reloadData()
                 })
             }
@@ -97,7 +99,10 @@ extension AllRoastsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Configure the cell...
         let roast = roastTexts[indexPath.row]
-    
+        let count = count_list[indexPath.row]
+        
+        // var count_text: String = "\(count)"
+        
         let roastCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
         
         roastCell.cellView.layer.borderWidth = 0.4
@@ -106,7 +111,7 @@ extension AllRoastsViewController: UITableViewDataSource, UITableViewDelegate {
         
         
         roastCell.setText(roastText: roast)
-
+        roastCell.setupVotes(count: "\(count)")
         
         // circle image
         roastCell.ProfileIcon.layer.cornerRadius = roastCell.ProfileIcon.frame.size.height / 2

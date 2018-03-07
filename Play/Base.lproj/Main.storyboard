@@ -41,14 +41,6 @@
                                     <constraint firstAttribute="width" constant="375" id="rda-fI-FJK"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lj8-bY-UJe">
-                                <rect key="frame" x="27" y="23" width="24" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="backicon"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" identifier="goToHomeFromProfile" id="CP0-hd-EkG"/>
-                                </connections>
-                            </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="df7-Nm-vld">
                                 <rect key="frame" x="0.0" y="309" width="375" height="358"/>
                                 <connections>
@@ -62,18 +54,27 @@
                                     <constraint firstAttribute="width" constant="100" id="uZF-bp-7dE"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First LastName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbX-RP-0TL">
-                                <rect key="frame" x="104" y="277" width="166.5" height="32.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Last" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbX-RP-0TL">
+                                <rect key="frame" x="128" y="277" width="119" height="33"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lj8-bY-UJe">
+                                <rect key="frame" x="16" y="20" width="42" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                <state key="normal" title="x"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" identifier="goToHomeFromProfile" id="CP0-hd-EkG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="gbX-RP-0TL" secondAttribute="trailing" id="1cw-A8-FNO"/>
-                            <constraint firstItem="gbX-RP-0TL" firstAttribute="leading" secondItem="WMz-jw-tdw" secondAttribute="leadingMargin" constant="88" id="Bck-7K-ykS"/>
+                            <constraint firstItem="gbX-RP-0TL" firstAttribute="leading" secondItem="WMz-jw-tdw" secondAttribute="leadingMargin" constant="112" id="4ev-Au-btA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gbX-RP-0TL" secondAttribute="trailing" constant="112" id="DUE-c6-jni"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EyI-cu-fE8" secondAttribute="trailing" constant="122" id="FEf-FC-kC3"/>
                             <constraint firstItem="df7-Nm-vld" firstAttribute="top" secondItem="EyI-cu-fE8" secondAttribute="bottom" constant="40" id="IJU-UC-AN8"/>
                             <constraint firstAttribute="trailing" secondItem="Dol-yW-1T9" secondAttribute="trailing" id="Tqo-Uf-yqd"/>
@@ -420,8 +421,8 @@
                                             <segue destination="DaE-aX-Ruw" kind="presentation" identifier="goToNewPostFromHome" id="SPx-4s-1fl"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOh-fU-2eX">
-                                        <rect key="frame" x="20" y="18" width="40" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOh-fU-2eX">
+                                        <rect key="frame" x="20" y="18" width="46" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="jDT-xC-Quj"/>
                                             <constraint firstAttribute="width" constant="40" id="qGD-FJ-959"/>
@@ -674,15 +675,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="peM-bs-TWl">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Time Roasts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vg-RD-2NP">
-                                        <rect key="frame" x="218.5" y="46" width="136.5" height="26"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="All Time Roasts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vg-RD-2NP">
+                                        <rect key="frame" x="20" y="49" width="136.5" height="26"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peP-A1-qaD">
-                                        <rect key="frame" x="20" y="31.5" width="24" height="24"/>
-                                        <state key="normal" image="backicon"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peP-A1-qaD">
+                                        <rect key="frame" x="324" y="12" width="22" height="38"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                        <state key="normal" title="x"/>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" identifier="goToHomeFromAllRoasts" id="T0I-gN-qgQ"/>
                                         </connections>
@@ -691,7 +693,6 @@
                                 <color key="backgroundColor" red="0.56097942590713501" green="0.81148171424865723" blue="0.56864964962005615" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="6vg-RD-2NP" secondAttribute="bottom" constant="15" id="93O-q2-nto"/>
-                                    <constraint firstItem="6vg-RD-2NP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="peM-bs-TWl" secondAttribute="leading" constant="20" symbolic="YES" id="Hog-Ru-ufh"/>
                                     <constraint firstItem="peP-A1-qaD" firstAttribute="centerY" secondItem="peM-bs-TWl" secondAttribute="centerY" id="ID3-C1-W3S"/>
                                     <constraint firstAttribute="width" secondItem="peM-bs-TWl" secondAttribute="height" multiplier="125:29" id="bOB-mc-R1q"/>
                                     <constraint firstItem="peP-A1-qaD" firstAttribute="leading" secondItem="peM-bs-TWl" secondAttribute="leading" constant="20" id="sgw-x6-2ub"/>
@@ -726,6 +727,13 @@
                                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRL-h9-dVD">
+                                                            <rect key="frame" x="291" y="48" width="19" height="14"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="86b-sb-r5g" firstAttribute="top" secondItem="HO6-0L-WuJ" secondAttribute="top" constant="10" id="1ws-BV-o5j"/>
@@ -738,6 +746,10 @@
                                                         <constraint firstItem="XHb-d4-Jox" firstAttribute="trailing" secondItem="HO6-0L-WuJ" secondAttribute="trailingMargin" id="rTH-ZJ-hBy"/>
                                                     </constraints>
                                                 </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire_icon" translatesAutoresizingMaskIntoConstraints="NO" id="D9M-kU-06E">
+                                                    <rect key="frame" x="311" y="32" width="23" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="HO6-0L-WuJ" firstAttribute="centerX" secondItem="pek-zl-2Ue" secondAttribute="centerX" id="Ms8-Ig-XtL"/>
@@ -750,6 +762,7 @@
                                             <outlet property="ProfileIcon" destination="86b-sb-r5g" id="o7C-VU-CLS"/>
                                             <outlet property="Roast" destination="XHb-d4-Jox" id="goq-0g-tqv"/>
                                             <outlet property="cellView" destination="HO6-0L-WuJ" id="Bob-ye-ECW"/>
+                                            <outlet property="upVotes" destination="dRL-h9-dVD" id="nIG-IP-d8Y"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -904,11 +917,12 @@
         <image name="Person1" width="200" height="200"/>
         <image name="Person4" width="200" height="200"/>
         <image name="backicon" width="24" height="24"/>
+        <image name="fire_icon" width="511" height="511"/>
         <image name="profile" width="376" height="376"/>
         <image name="profile_bkgd" width="1600" height="1200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DuT-cS-dLk"/>
-        <segue reference="lHW-ac-rc1"/>
+        <segue reference="Q7r-AT-tJs"/>
+        <segue reference="CP0-hd-EkG"/>
     </inferredMetricsTieBreakers>
 </document>

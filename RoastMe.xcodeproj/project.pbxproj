@@ -20,6 +20,7 @@
 		DC2562E2202931D8006E4438 /* PlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562E1202931D8006E4438 /* PlayTests.swift */; };
 		DC2562ED202931D8006E4438 /* PlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562EC202931D8006E4438 /* PlayUITests.swift */; };
 		DC34D953204BFD160005FCEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC34D952204BFD160005FCEC /* Assets.xcassets */; };
+		DC49A979204FA62B00CD2090 /* Profile_RoastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC49A978204FA62A00CD2090 /* Profile_RoastCell.swift */; };
 		DC6090BD204D0EB300A84D83 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6090BC204D0EB300A84D83 /* CustomViewController.swift */; };
 		DC86DCE0202A69A3004D974E /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86DCDF202A69A3004D974E /* VoteViewController.swift */; };
 		DC86DCE2202A69B9004D974E /* RoastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86DCE1202A69B9004D974E /* RoastViewController.swift */; };
@@ -78,6 +79,7 @@
 		DC2562EC202931D8006E4438 /* PlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayUITests.swift; sourceTree = "<group>"; };
 		DC2562EE202931D8006E4438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC34D952204BFD160005FCEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC49A978204FA62A00CD2090 /* Profile_RoastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile_RoastCell.swift; sourceTree = "<group>"; };
 		DC6090BC204D0EB300A84D83 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		DC86DCDF202A69A3004D974E /* VoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteViewController.swift; sourceTree = "<group>"; };
 		DC86DCE1202A69B9004D974E /* RoastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoastViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			children = (
 				DCAF02DF204D53CA0031CC19 /* ContentViewController.swift */,
 				DC6090BC204D0EB300A84D83 /* CustomViewController.swift */,
+				DC49A978204FA62A00CD2090 /* Profile_RoastCell.swift */,
 				DCAF02E3204D6B040031CC19 /* ParentVCViewController.swift */,
 				DCAF02E5204D6C4D0031CC19 /* EmptyVC.swift */,
 			);
@@ -523,6 +526,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-RoastMe/Pods-RoastMe-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/SwipeMenuViewController/SwipeMenuViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -531,6 +535,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeMenuViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -565,6 +570,7 @@
 				DCAF02E6204D6C4D0031CC19 /* EmptyVC.swift in Sources */,
 				DCD7DC96204BB64E00AA3B4D /* TableViewCell.swift in Sources */,
 				9F13A1BC204A64B600D19E4C /* NewPostViewController.swift in Sources */,
+				DC49A979204FA62B00CD2090 /* Profile_RoastCell.swift in Sources */,
 				9F3F9F04203E719800B47AEE /* api.swift in Sources */,
 				DC8CC73B203E82AF001FCBD9 /* ProfileViewController.swift in Sources */,
 				DC86DCE2202A69B9004D974E /* RoastViewController.swift in Sources */,

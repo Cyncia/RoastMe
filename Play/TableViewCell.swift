@@ -14,6 +14,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet var ProfileIcon: UIImageView!
     @IBOutlet var cellView: UIView!
     @IBOutlet var Roast: UITextView!
+    @IBOutlet var upVotes: UILabel!
     
     
     func setText(roastText: String) {
@@ -21,6 +22,10 @@ class TableViewCell: UITableViewCell {
         //ProfileIcon.image = person.image
         Roast.text = roastText
         
+    }
+    
+    func setupVotes(count: String) {
+        upVotes.text = count
     }
     
     

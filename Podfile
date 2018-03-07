@@ -12,6 +12,7 @@ pod 'Firebase/Core'
 pod 'Firebase/Storage'
 pod 'Firebase/Auth'
 pod 'SwipeMenuViewController'
+pod "Hero"
 
   target 'RoastMeTests' do
     inherit! :search_paths
@@ -24,3 +25,4 @@ pod 'SwipeMenuViewController'
   end
 
 end
+
