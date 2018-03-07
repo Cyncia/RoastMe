@@ -46,6 +46,12 @@ class ProfileViewController: UIViewController {
                 destination.curr = curr
             }
         }
+        else if segue.identifier == "goToYourRoastsFromProfile" {
+            if let destination = segue.destination as? YourRoastsViewController {
+                destination.history = history
+                destination.curr = curr
+            }
+        }
     }
 
     /*

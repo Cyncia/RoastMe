@@ -12,6 +12,8 @@
 		9F12D8142046323F00050740 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F12D8132046323F00050740 /* GoogleService-Info.plist */; };
 		9F13A1BC204A64B600D19E4C /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F13A1BB204A64B600D19E4C /* NewPostViewController.swift */; };
 		9F3F9F04203E719800B47AEE /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3F9F03203E719800B47AEE /* api.swift */; };
+		9F5FD3852050428100275611 /* YourRoastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5FD3842050428100275611 /* YourRoastsViewController.swift */; };
+		9F5FD38720504DED00275611 /* YourRoastsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5FD38620504DED00275611 /* YourRoastsTableViewCell.swift */; };
 		9F97C0FC12B1D7872F0C0557 /* Pods_RoastMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BDFD2981F331EB425513AA /* Pods_RoastMeUITests.framework */; };
 		DC2562CD202931D8006E4438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562CC202931D8006E4438 /* AppDelegate.swift */; };
 		DC2562CF202931D8006E4438 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562CE202931D8006E4438 /* HomeScreenViewController.swift */; };
@@ -63,6 +65,8 @@
 		9F12D8132046323F00050740 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9F13A1BB204A64B600D19E4C /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		9F3F9F03203E719800B47AEE /* api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
+		9F5FD3842050428100275611 /* YourRoastsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourRoastsViewController.swift; sourceTree = "<group>"; };
+		9F5FD38620504DED00275611 /* YourRoastsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourRoastsTableViewCell.swift; sourceTree = "<group>"; };
 		A48EB932AF426E7DD80D979A /* Pods_RoastMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoastMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B023303C595395B9235D68BD /* Pods-RoastMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMeUITests/Pods-RoastMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC2562C9202931D8006E4438 /* RoastMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoastMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -239,6 +243,8 @@
 				DC86DCE1202A69B9004D974E /* RoastViewController.swift */,
 				DCD7DC9C204BC33000AA3B4D /* AllRoastsViewController.swift */,
 				DCD7DC94204BB64E00AA3B4D /* TableViewCell.swift */,
+				9F5FD38620504DED00275611 /* YourRoastsTableViewCell.swift */,
+				9F5FD3842050428100275611 /* YourRoastsViewController.swift */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -573,11 +579,13 @@
 				DCCB2739204790B300DB289B /* TableViewController.swift in Sources */,
 				DCAF02E4204D6B040031CC19 /* ParentVCViewController.swift in Sources */,
 				DC6090BD204D0EB300A84D83 /* CustomViewController.swift in Sources */,
+				9F5FD3852050428100275611 /* YourRoastsViewController.swift in Sources */,
 				DCAF02E0204D53CA0031CC19 /* ContentViewController.swift in Sources */,
 				DCCB273720477D3F00DB289B /* Interactor.swift in Sources */,
 				DC2562CF202931D8006E4438 /* HomeScreenViewController.swift in Sources */,
 				DCCB273320476BDB00DB289B /* CustomSegue.swift in Sources */,
 				DC2562CD202931D8006E4438 /* AppDelegate.swift in Sources */,
+				9F5FD38720504DED00275611 /* YourRoastsTableViewCell.swift in Sources */,
 				DCD7DC93204BA25700AA3B4D /* LoginViewController.swift in Sources */,
 				DCD7DC9D204BC33000AA3B4D /* AllRoastsViewController.swift in Sources */,
 				DCCB27352047779B00DB289B /* DismissAnimator.swift in Sources */,
