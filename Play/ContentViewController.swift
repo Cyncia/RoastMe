@@ -482,7 +482,6 @@ class ContentViewController: UIViewController, UITableViewDelegate, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as UITableViewCell
         cell.textLabel!.text = myArray[indexPath.row]
         return cell
-  
     }
 
 }
