@@ -76,6 +76,7 @@ class LoginViewController: UIViewController {
                     else {
                         // error
                         print("Error from registration.")
+                        print(error)
                         self.errorTextView.backgroundColor = UIColor.red.withAlphaComponent(0.4)
                         self.errorTextView.text = "Email already registered."
                     }
