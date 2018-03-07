@@ -10,8 +10,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Optima.ttc">
-            <string>Optima-Regular</string>
+        <array key="Futura.ttc">
+            <string>Futura-Medium</string>
         </array>
     </customFonts>
     <scenes>
@@ -28,18 +28,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3ej-B2-VFt">
-                                <rect key="frame" x="112.5" y="220.5" width="150" height="226"/>
+                                <rect key="frame" x="112.5" y="219" width="150" height="229.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="xRw-JP-B1h">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="184"/>
+                                        <rect key="frame" x="0.0" y="0.5" width="150" height="184"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="0pW-te-c4Q"/>
                                             <constraint firstAttribute="width" secondItem="xRw-JP-B1h" secondAttribute="height" multiplier="241:297" id="odf-WS-a6v"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RoastMe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgA-8W-ZbC">
-                                        <rect key="frame" x="0.0" y="184" width="150" height="42"/>
-                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="35"/>
+                                        <rect key="frame" x="0.0" y="184.5" width="150" height="45.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -49,7 +49,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.52156862745098043" green="0.82745098039215681" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3ej-B2-VFt" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="AF2-S5-FZp"/>
                             <constraint firstItem="3ej-B2-VFt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Olh-YS-gyS"/>
