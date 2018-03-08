@@ -27,6 +27,7 @@ class RoastViewController: UIViewController {
     
     @IBOutlet var PostBox: UITextView!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var arrowLabel: UILabel!
     
     // define a variable to store initial touch position
     var initialTouchPoint: CGPoint = CGPoint(x: 0,y: 0)
@@ -65,6 +66,8 @@ class RoastViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
    
+        arrowLabel.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
+        
         NotificationCenter.default.addObserver(self, selector: #selector(RoastViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(RoastViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         

@@ -560,6 +560,7 @@
                     </view>
                     <connections>
                         <outlet property="PostBox" destination="K0W-Ok-uae" id="tFE-sw-bdY"/>
+                        <outlet property="arrowLabel" destination="RZi-f9-q9Q" id="fsq-lm-zbp"/>
                         <outlet property="imageView" destination="NCF-Zf-D33" id="8PG-it-X6J"/>
                         <segue destination="zJJ-ww-niJ" kind="show" identifier="goToAllRoastsFromRoast" id="DuT-cS-dLk"/>
                     </connections>
@@ -854,6 +855,7 @@
                         <outlet property="Roast2" destination="9Dd-Pz-Y0d" id="Cyy-ck-gW2"/>
                         <outlet property="Roast3" destination="vpO-Py-P4G" id="mqb-pq-iwA"/>
                         <outlet property="Roast4" destination="YQg-Hp-g1S" id="olp-Ll-d8U"/>
+                        <outlet property="arrowLabel" destination="0Ml-9m-118" id="5No-rP-Mox"/>
                         <outlet property="roast1" destination="jBC-ZA-UXA" id="pZj-i2-Fv6"/>
                         <outlet property="roast2" destination="9Dd-Pz-Y0d" id="vgt-hG-kHe"/>
                         <outlet property="roast3" destination="vpO-Py-P4G" id="OMb-wk-Bv7"/>
@@ -990,8 +992,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cr4-WD-zSY">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Pictures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luN-Af-twx">
-                                        <rect key="frame" x="239.5" y="46" width="115.5" height="26"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Posts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luN-Af-twx">
+                                        <rect key="frame" x="263.5" y="46" width="91.5" height="26"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1077,7 +1079,7 @@
         <image name="profpic" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="v7c-0f-QLI"/>
+        <segue reference="DuT-cS-dLk"/>
         <segue reference="HG3-3N-Yar"/>
         <segue reference="yib-ov-hUL"/>
     </inferredMetricsTieBreakers>

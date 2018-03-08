@@ -14,6 +14,7 @@ class VoteViewController: UIViewController {
     @IBOutlet weak var roast2: UIButton!
     @IBOutlet weak var roast3: UIButton!
     @IBOutlet weak var roast4: UIButton!
+    @IBOutlet weak var arrowLabel: UILabel!
     var roastOneId: String = ""
     var roastTwoId: String = ""
     var roastThreeId: String = ""
@@ -51,6 +52,8 @@ class VoteViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        arrowLabel.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
         
         // Make buttons rounded
         roast1.layer.cornerRadius = 15.0
