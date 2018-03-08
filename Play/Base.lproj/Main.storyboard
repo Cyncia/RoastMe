@@ -97,6 +97,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oj2-yH-AC8">
                                         <rect key="frame" x="0.0" y="70" width="97" height="30"/>
                                         <state key="normal" title="Your Posts"/>
+                                        <connections>
+                                            <segue destination="t1c-yb-WdI" kind="show" identifier="goToYourPostsFromProfile" id="k9p-yW-YJo"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xH1-uU-8G3">
                                         <rect key="frame" x="0.0" y="140" width="97" height="30"/>
@@ -135,34 +138,6 @@
                 <swipeGestureRecognizer direction="right" id="KMI-uL-QwD"/>
             </objects>
             <point key="canvasLocation" x="1088.8" y="-483.50824587706148"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="CMQ-0Y-3bu">
-            <objects>
-                <tableViewController id="ei8-TS-caI" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UVJ-42-bs0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Whv-GV-lQU">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Whv-GV-lQU" id="Vwv-IW-6oy">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ei8-TS-caI" id="x8s-Nt-5a4"/>
-                            <outlet property="delegate" destination="ei8-TS-caI" id="LoN-6o-0Iq"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D88-aS-QV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2498" y="-491"/>
         </scene>
         <!--New Post-->
         <scene sceneID="f0a-yD-Xaj">
@@ -1000,6 +975,99 @@
             </objects>
             <point key="canvasLocation" x="1817" y="-510"/>
         </scene>
+        <!--Your Posts View Controller-->
+        <scene sceneID="l8e-eO-DcH">
+            <objects>
+                <viewController id="t1c-yb-WdI" customClass="YourPostsViewController" customModule="RoastMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GD1-9a-zxI"/>
+                        <viewControllerLayoutGuide type="bottom" id="SQp-rI-qIb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dsM-9M-5PN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cr4-WD-zSY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Pictures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luN-Af-twx">
+                                        <rect key="frame" x="239.5" y="46" width="115.5" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygl-sU-SQJ">
+                                        <rect key="frame" x="20" y="31.5" width="24" height="24"/>
+                                        <state key="normal" image="backicon"/>
+                                        <connections>
+                                            <segue destination="GQu-3w-gh7" kind="show" identifier="goToProfileFromYourPosts" id="yib-ov-hUL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.48845477970000001" blue="0.38409951669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="luN-Af-twx" secondAttribute="trailing" constant="20" id="3DQ-Q9-CIq"/>
+                                    <constraint firstItem="ygl-sU-SQJ" firstAttribute="centerY" secondItem="cr4-WD-zSY" secondAttribute="centerY" id="7Ex-Xw-see"/>
+                                    <constraint firstItem="ygl-sU-SQJ" firstAttribute="leading" secondItem="cr4-WD-zSY" secondAttribute="leading" constant="20" id="JP6-Jf-7xr"/>
+                                    <constraint firstAttribute="bottom" secondItem="luN-Af-twx" secondAttribute="bottom" constant="15" id="XSD-hf-1zh"/>
+                                    <constraint firstItem="luN-Af-twx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cr4-WD-zSY" secondAttribute="leading" constant="20" symbolic="YES" id="cEX-Sy-KxX"/>
+                                    <constraint firstAttribute="width" secondItem="cr4-WD-zSY" secondAttribute="height" multiplier="125:29" id="pQo-j4-GVW"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9HI-IL-8sG">
+                                <rect key="frame" x="0.0" y="87" width="375" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="TBx-SR-bnU" customClass="YourPostsTableViewCell" customModule="RoastMe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TBx-SR-bnU" id="HBR-NL-8Dj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k8I-WM-Js2">
+                                                    <rect key="frame" x="0.0" y="10" width="375" height="300"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="300" id="TCV-g6-86q"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="k8I-WM-Js2" secondAttribute="bottom" constant="10" id="5Uy-B0-Ife"/>
+                                                <constraint firstItem="k8I-WM-Js2" firstAttribute="top" secondItem="HBR-NL-8Dj" secondAttribute="top" constant="10" id="LvY-Iq-cCn"/>
+                                                <constraint firstItem="k8I-WM-Js2" firstAttribute="leading" secondItem="HBR-NL-8Dj" secondAttribute="leading" id="O8Z-hf-rMd"/>
+                                                <constraint firstItem="k8I-WM-Js2" firstAttribute="centerX" secondItem="HBR-NL-8Dj" secondAttribute="centerX" id="TC5-My-53U"/>
+                                                <constraint firstItem="k8I-WM-Js2" firstAttribute="centerY" secondItem="HBR-NL-8Dj" secondAttribute="centerY" id="kAZ-JB-bcq"/>
+                                                <constraint firstAttribute="trailing" secondItem="k8I-WM-Js2" secondAttribute="trailing" id="xnh-1p-e70"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="postImage" destination="k8I-WM-Js2" id="D1M-zs-sWZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cr4-WD-zSY" firstAttribute="leading" secondItem="dsM-9M-5PN" secondAttribute="leading" id="X52-oh-3kO"/>
+                            <constraint firstAttribute="trailing" secondItem="9HI-IL-8sG" secondAttribute="trailing" id="cbU-Re-HNr"/>
+                            <constraint firstAttribute="trailing" secondItem="cr4-WD-zSY" secondAttribute="trailing" id="dTH-w5-m9v"/>
+                            <constraint firstItem="9HI-IL-8sG" firstAttribute="top" secondItem="cr4-WD-zSY" secondAttribute="bottom" id="o67-eS-L7I"/>
+                            <constraint firstItem="SQp-rI-qIb" firstAttribute="top" secondItem="9HI-IL-8sG" secondAttribute="bottom" id="wb2-0x-nJp"/>
+                            <constraint firstItem="9HI-IL-8sG" firstAttribute="leading" secondItem="dsM-9M-5PN" secondAttribute="leading" id="xcp-0x-trz"/>
+                            <constraint firstItem="cr4-WD-zSY" firstAttribute="top" secondItem="dsM-9M-5PN" secondAttribute="top" id="zm7-2X-pu0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Chart" destination="9HI-IL-8sG" id="nev-x9-Eqf"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToHomeFromYourPosts" id="HG3-3N-Yar"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vrj-tb-tUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2529" y="-510"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Person1" width="200" height="200"/>
@@ -1009,8 +1077,8 @@
         <image name="profpic" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DuT-cS-dLk"/>
-        <segue reference="AuB-yH-HK2"/>
-        <segue reference="6Uf-SV-5bz"/>
+        <segue reference="v7c-0f-QLI"/>
+        <segue reference="HG3-3N-Yar"/>
+        <segue reference="yib-ov-hUL"/>
     </inferredMetricsTieBreakers>
 </document>
