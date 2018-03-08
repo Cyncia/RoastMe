@@ -14,6 +14,8 @@
 		9F3F9F04203E719800B47AEE /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3F9F03203E719800B47AEE /* api.swift */; };
 		9F5FD3852050428100275611 /* YourRoastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5FD3842050428100275611 /* YourRoastsViewController.swift */; };
 		9F5FD38720504DED00275611 /* YourRoastsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5FD38620504DED00275611 /* YourRoastsTableViewCell.swift */; };
+		9F5FD3892050AFE800275611 /* YourPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5FD3882050AFE800275611 /* YourPostsViewController.swift */; };
+		9F5FD38B2050AFFA00275611 /* YourPostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5FD38A2050AFFA00275611 /* YourPostsTableViewCell.swift */; };
 		9F97C0FC12B1D7872F0C0557 /* Pods_RoastMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BDFD2981F331EB425513AA /* Pods_RoastMeUITests.framework */; };
 		DC2562CD202931D8006E4438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562CC202931D8006E4438 /* AppDelegate.swift */; };
 		DC2562CF202931D8006E4438 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2562CE202931D8006E4438 /* HomeScreenViewController.swift */; };
@@ -67,6 +69,8 @@
 		9F3F9F03203E719800B47AEE /* api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
 		9F5FD3842050428100275611 /* YourRoastsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourRoastsViewController.swift; sourceTree = "<group>"; };
 		9F5FD38620504DED00275611 /* YourRoastsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourRoastsTableViewCell.swift; sourceTree = "<group>"; };
+		9F5FD3882050AFE800275611 /* YourPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourPostsViewController.swift; sourceTree = "<group>"; };
+		9F5FD38A2050AFFA00275611 /* YourPostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourPostsTableViewCell.swift; sourceTree = "<group>"; };
 		A48EB932AF426E7DD80D979A /* Pods_RoastMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoastMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B023303C595395B9235D68BD /* Pods-RoastMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoastMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoastMeUITests/Pods-RoastMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC2562C9202931D8006E4438 /* RoastMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoastMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -245,6 +249,8 @@
 				DCD7DC94204BB64E00AA3B4D /* TableViewCell.swift */,
 				9F5FD38620504DED00275611 /* YourRoastsTableViewCell.swift */,
 				9F5FD3842050428100275611 /* YourRoastsViewController.swift */,
+				9F5FD3882050AFE800275611 /* YourPostsViewController.swift */,
+				9F5FD38A2050AFFA00275611 /* YourPostsTableViewCell.swift */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -575,6 +581,7 @@
 				DC8CC73B203E82AF001FCBD9 /* ProfileViewController.swift in Sources */,
 				DC86DCE2202A69B9004D974E /* RoastViewController.swift in Sources */,
 				DC86DCE0202A69A3004D974E /* VoteViewController.swift in Sources */,
+				9F5FD38B2050AFFA00275611 /* YourPostsTableViewCell.swift in Sources */,
 				DCD7DC9B204BBB1400AA3B4D /* User.swift in Sources */,
 				DCCB2739204790B300DB289B /* TableViewController.swift in Sources */,
 				DCAF02E4204D6B040031CC19 /* ParentVCViewController.swift in Sources */,
@@ -583,6 +590,7 @@
 				DCAF02E0204D53CA0031CC19 /* ContentViewController.swift in Sources */,
 				DCCB273720477D3F00DB289B /* Interactor.swift in Sources */,
 				DC2562CF202931D8006E4438 /* HomeScreenViewController.swift in Sources */,
+				9F5FD3892050AFE800275611 /* YourPostsViewController.swift in Sources */,
 				DCCB273320476BDB00DB289B /* CustomSegue.swift in Sources */,
 				DC2562CD202931D8006E4438 /* AppDelegate.swift in Sources */,
 				9F5FD38720504DED00275611 /* YourRoastsTableViewCell.swift in Sources */,

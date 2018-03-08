@@ -45,6 +45,12 @@ class ParentVCViewController: UIViewController {
                 destination.curr = curr
             }
         }
+        else if segue.identifier == "goToYourPostsFromProfile" {
+            if let destination = segue.destination as? YourPostsViewController {
+                destination.history = history
+                destination.curr = curr
+            }
+        }
     }
 
     /*
